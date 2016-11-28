@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+{% extends 'store/base_after_login.html' %}
+{% block content %}
+<div class="section">
+      <div class="container">
+        <div class="row">
+            <h1>Shipping Address</h1>
+            <input type="submit" name="AddCard" value="New Card" data-toggle="modal" data-target="#addAddress">
+             {% include 'store/cardsForm.html' with submitId="addNewAddr" modalId="addAddress" title="New Address" dispCheckBox="block" ix="1"%}
+             {% include 'store/modalForm.html' with submitId="updateNewAddr" modalId="updateAddress" title="Update Address" dispCheckBox="None" ix="2" %}
+          <table class="table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Card Details</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for id, cardNum, expMonth, expYear in cards%}
+                <tr>
+                  <th scope="row">{{forloop.counter}}</th>
+                  <td>
+                   <address>
+                      {% if cardNum %}
+                         xxxx-xxxx-xxxx-{{ cardNum|slice:"12:16" }}<br>
+                         Exp: {{ expMonth }}/{{ expYear }}
+                      {% endif %}
+                    </address>
+                  </td>
+                  <td>
+                    <input type="button" onclick="passData(this)" data-toggle="modal" data-target="#updateAddress" name={{ id }} id=editAddress{{forloop.counter}} value="Edit">
+                     <p><input type="submit" onclick="deleteAddress(this)" name={{ id }} id=delAddress{{forloop.counter}} value="Delete"></p>
+                    <br>
+                  </td>
+                </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    {% load static %}
+    <script type="text/javascript" src="{% static 'js/userCards.js' %}"></script>
+{% endblock %}
+

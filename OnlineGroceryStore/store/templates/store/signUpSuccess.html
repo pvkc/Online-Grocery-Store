@@ -1,0 +1,14 @@
+    {% extends 'store/base_not_logged_in.html'%}
+    {% block content %}
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Sign Up Successful..</h1>
+            <p>Please Click on
+              <a href="{%url 'signIn'%}">Sign in</a> to log in</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endblock %}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="dbSrc:///78f97950/1f4eccb9-a917-4b1e-82b5-844c256fe896" dialect="Oracle" />
+    <file url="dbSrc:///78f97950/9f3c0b10-71f2-483e-849d-9a626630f0c8" dialect="Oracle" />
+    <file url="file://$PROJECT_DIR$" dialect="OracleSqlPlus" />
+  </component>
+</project>

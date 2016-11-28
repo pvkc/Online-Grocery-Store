@@ -1,0 +1,76 @@
+<div id= "{{ modalId }}" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">{{ title }}</h4>
+                </div>
+                <div class="modal-body">
+                    <form method="post" role="form" id="addrForm_{{ ix }}" class="form-horizontal text-left">
+                    {% csrf_token %}
+                        <div class="form-group">
+                            <div class="col-sm-2 col-sm-offset-2">
+                             <label for="streetName_{{ ix }}" class="control-label">Street Name</label>
+                            </div>
+                            <div class="col-sm-4">
+                             <input type="text" class="form-control" id="streetName_{{ ix }}" name='streetName' placeholder="Street Name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-2 col-sm-offset-2">
+                             <label for="street_{{ ix }}" class="control-label">Street</label>
+                            </div>
+                            <div class="col-sm-4">
+                             <input type="text" class="form-control" id="street_{{ ix }}" name='street' placeholder="Street">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-2 col-sm-offset-2">
+                             <label for="aptNum_{{ ix }}" class="control-label">Apt Num</label>
+                            </div>
+                            <div class="col-lg-4">
+                             <input type="text" class="form-control" id="aptNum_{{ ix }}" name='aptNum' placeholder="Apt Num" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-2 col-sm-offset-2">
+                             <label for="city_{{ ix }}" class="control-label">City</label>
+                            </div>
+                            <div class="col-lg-4">
+                             <input type="text" class="form-control" id="city_{{ ix }}" name='city' placeholder="City" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-2 col-sm-offset-2">
+                             <label for="state_{{ ix }}" class="control-label">State</label>
+                            </div>
+                            <div class="col-lg-4">
+                             <input type="text" class="form-control" id="state_{{ ix }}" name='state' placeholder="State" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-2 col-sm-offset-2">
+                             <label for="zipCode_{{ ix }}" class="control-label">Zip Code</label>
+                            </div>
+                            <div class="col-lg-4">
+                             <input type="text" class="form-control" id="zipCode_{{ ix }}" name='zipCode' placeholder="Zip" required>
+                            </div>
+                        </div>
+                        <div class="form-group" style="display: {{ dispCheckBox }}">
+                            <div class=" col-sm-offset-2">
+                                <label>
+                                  <input id='setDefault_{{ ix }}'  type="checkbox"> Make this default
+                                </label>
+                            </div>
+                        </div>
+
+                         <div class="modal-footer">
+                  <button type="submit" class="btn btn-default" id={{ submitId }}>Submit</button>
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+                    </form>
+                </div>
+
+              </div>
+            </div>
+          </div>

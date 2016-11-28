@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<style type="text/css">
+	.center{
+		text-align: center;
+
+	}
+
+	.heading{
+		margin: 0;
+    	padding: 0;
+    	border: 0;
+    	outline: 0;
+    	margin-top: -10px;
+    	margin-left: -5px;
+    	margin-right: -5px;
+		color: white;
+		background-color: #333;
+	}
+	.inline{
+		display: inline-block;
+	}
+</style>
+
+<head> 
+	<title>US Grocery Store</title>
+	<div class="line">
+	<h1 class="heading">US Grocery Store</h1>
+	<form class="inline">
+		<input id="HomeSearch" type="text" name="SearchText" list="PredictedList" placeholder="Search...">
+		<input type="submit" name="SubmitSearch" value="Search">
+		<datalist id ="PredictedList"></datalist>
+	</form>
+	<div id="display"></div>
+	</div>
+	{% load static %}
+	<script src="{%static "js/index.js" %}"></script>
+
+<a href="#">Sign in</a>
+</head>
+
+<body>
+	
+</body>

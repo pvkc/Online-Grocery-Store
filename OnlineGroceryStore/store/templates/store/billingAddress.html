@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+{% extends 'store/base_after_login.html' %}
+{% block content %}
+<div class="section">
+      <div class="container">
+        <div class="row">
+            <h1>Billing Address</h1>
+            <input type="submit" name="AddAddress" value="New Address" data-toggle="modal" data-target="#addAddress">
+             {% include 'store/modalForm.html' with submitId="addNewAddr" modalId="addAddress" title="New Address" dispCheckBox="block" ix="1"%}
+             {% include 'store/modalForm.html' with submitId="updateNewAddr" modalId="updateAddress" title="Update Address" dispCheckBox="None" ix="2" %}
+          <table class="table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Address</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for id, isDefaultAddr, BillToStreet, BillToStreetName, BillToAptNum, BillToCity, BillToState, BillToZip in billAddress%}
+                <tr>
+                  <th scope="row">{{forloop.counter}}</th>
+                  <td>
+                   <address>
+                      {% ifnotequal BillToStreet '--' %}
+                         {{ BillToStreet }}<br>
+                      {% endifnotequal %}
+                      {% ifnotequal BillToStreetName '--' %}
+                         {{ BillToStreetName }}<br>
+                      {% endifnotequal %}
+                      {{ BillToAptNum }}<br>
+                      {{ BillToCity }}<br>
+                      {{ BillToState }}<br>
+                      {{ BillToZip }}<br>
+                    </address>
+                  </td>
+                  <td>
+                    <input type="button" onclick="passData(this)" data-toggle="modal" data-target="#updateAddress" name={{ id }} id=editAddress{{forloop.counter}} value="Edit" data-street="{{ BillToStreet }}" data-street-Name="{{ BillToStreetName }}" data-apt-Num = "{{ BillToAptNum }}" data-city="{{ BillToCity }}" data-state="{{ BillToState }}" data-zip="{{ BillToZip }}">
+                    <br>
+                    <br>
+                    {% ifequal isDefaultAddr 'Y' %}
+                        <p><input type="submit" onclick="deleteAddress(this)" name={{ id }} id=delAddress{{forloop.counter}} value="Delete" disabled></p>
+                        <br>
+                        <input type="submit" onclick="makeDefault(this)" name={{ id }} id=makeDefault{{forloop.counter}} value="Set Default" disabled>
+                        <p> <br>This is the Default Address </p>
+                         Default Address cannot be deleted.<br>
+                         Choose different default to delete this
+                    {% else %}
+                        <p><input type="submit" onclick="deleteAddress(this)" name={{ id }} id=delAddress{{forloop.counter}} value="Delete"></p>
+                        <br>
+                        <input type="submit" onclick="makeDefault(this)" name={{ id }} id=makeDefault{{forloop.counter}} value="Set Default">
+                    {% endifequal %}
+                    <br>
+                  </td>
+                </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    {% load static %}
+    <script type="text/javascript" src="{% static 'js/billingAddress.js' %}"></script>
+{% endblock %}
+

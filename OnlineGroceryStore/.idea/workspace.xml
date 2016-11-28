@@ -1,0 +1,1004 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9d48b56a-06ea-4f04-807b-42cfee6d4245" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DatabaseView">
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="@fourier.cs.iit.edupycharm" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="@fourier.cs.iit.edupycharm" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$GroupNode" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="@fourier.cs.iit.edupycharm" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$GroupNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="CUSTOMER_HAS_CARD" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="@fourier.cs.iit.edupycharm" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$GroupNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="CREDIT_CARD" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="@fourier.cs.iit.edupycharm" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$GroupNode" />
+      </PATH_ELEMENT>
+    </PATH>
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/store/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="67" lean-forward="true" selection-start-line="11" selection-start-column="67" selection-end-line="11" selection-end-column="67" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/store/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="174">
+              <caret line="633" column="33" lean-forward="true" selection-start-line="633" selection-start-column="33" selection-end-line="633" selection-end-column="33" />
+              <folding>
+                <element signature="e#0#45#0" expanded="true" />
+                <marker date="1480351944163" expanded="true" signature="389:575" ph="SELECT ADDR_... ADDRESS" />
+                <marker date="1480351944163" expanded="true" signature="601:934" ph="INSERT INTO ADDRESS... " />
+                <marker date="1480351944163" expanded="true" signature="681:934" ph="SELECT :1,:2... DUAL" />
+                <marker date="1480351944163" expanded="true" signature="743:791" ph="SELECT 1 FRO... ADDRESS" />
+                <marker date="1480351944163" expanded="true" signature="967:1042" ph="INSERT INTO CUSTOMER_LIVES... " />
+                <marker date="1480351944163" expanded="true" signature="2001:2064" ph="INSERT INTO LOG_IN_DETAILS... " />
+                <marker date="1480351944163" expanded="true" signature="2093:2160" ph="INSERT INTO CUSTOMER... " />
+                <marker date="1480351944163" expanded="true" signature="2187:2235" ph="SELECT CUSTO... CUSTOMER" />
+                <marker date="1480351944163" expanded="true" signature="3824:3883" ph="SELECT LOG_I... LOG_IN_DETAILS" />
+                <marker date="1480351944163" expanded="true" signature="4872:4950" ph="SELECT CUSTO... CUSTOMER" />
+                <marker date="1480351944163" expanded="true" signature="5702:5783" ph="SELECT ADDR_... CUSTOMER_LIVES" />
+                <marker date="1480351944163" expanded="true" signature="5816:5900" ph="SELECT ADDR_... CUSTOMER_BILLED_TO" />
+                <marker date="1480351944163" expanded="true" signature="5931:5991" ph="SELECT CARD_... CUSTOMER_HAS_CARD" />
+                <marker date="1480351944163" expanded="true" signature="6020:6092" ph="SELECT CARD_... CREDIT_CARD" />
+                <marker date="1480351944163" expanded="true" signature="6118:6212" ph="SELECT STREE... ADDRESS" />
+                <marker date="1480351944163" expanded="true" signature="8326:8395" ph="SELECT ADDR_... CUSTOMER_LIVES" />
+                <marker date="1480351944163" expanded="true" signature="8421:8515" ph="SELECT STREE... ADDRESS" />
+                <marker date="1480351944163" expanded="true" signature="9798:9914" ph="INSERT INTO CUSTOMER_LIVES... " />
+                <marker date="1480351944163" expanded="true" signature="9889:9914" ph="SELECT :1,:2... DUAL" />
+                <marker date="1480351944163" expanded="true" signature="10119:10200" ph="SELECT ADDR_... CUSTOMER_LIVES" />
+                <marker date="1480351944163" expanded="true" signature="10232:10312" ph="UPDATE CUSTO... " />
+                <marker date="1480351944163" expanded="true" signature="12097:12178" ph="SELECT ADDR_... CUSTOMER_LIVES" />
+                <marker date="1480351944163" expanded="true" signature="12210:12269" ph="UPDATE CUSTO... " />
+                <marker date="1480351944163" expanded="true" signature="13022:13084" ph="DELETE FROM " />
+                <marker date="1480351944163" expanded="true" signature="13668:13844" ph="INSERT INTO CUSTOMER_LIVES... " />
+                <marker date="1480351944163" expanded="true" signature="13761:13822" ph="SELECT IS_DE... CUSTOMER_LIVES" />
+                <marker date="1480351944163" expanded="true" signature="13878:13940" ph="DELETE FROM " />
+                <marker date="1480351944163" expanded="true" signature="13972:14044" ph="UPDATE CUSTO... " />
+                <marker date="1480351944163" expanded="true" signature="14081:14296" ph="UPDATE CUSTO... " />
+                <marker date="1480351944163" expanded="true" signature="14120:14181" ph="SELECT IS_DE... CUSTOMER_BILLED_TO" />
+                <marker date="1480351944163" expanded="true" signature="16396:16469" ph="SELECT ADDR_... CUSTOMER_BILLED_TO" />
+                <marker date="1480351944163" expanded="true" signature="16495:16589" ph="SELECT STREE... ADDRESS" />
+                <marker date="1480351944163" expanded="true" signature="17841:17965" ph="INSERT INTO CUSTOMER_BILLED_TO... " />
+                <marker date="1480351944163" expanded="true" signature="17940:17965" ph="SELECT :1,:2... DUAL" />
+                <marker date="1480351944163" expanded="true" signature="18177:18262" ph="SELECT ADDR_... CUSTOMER_BILLED_TO" />
+                <marker date="1480351944163" expanded="true" signature="18297:18381" ph="UPDATE CUSTO... " />
+                <marker date="1480351944163" expanded="true" signature="20259:20344" ph="SELECT ADDR_... CUSTOMER_BILLED_TO" />
+                <marker date="1480351944163" expanded="true" signature="20379:20442" ph="UPDATE CUSTO... " />
+                <marker date="1480351944163" expanded="true" signature="21230:21296" ph="DELETE FROM " />
+                <marker date="1480351944163" expanded="true" signature="21913:22101" ph="INSERT INTO CUSTOMER_BILLED_TO... " />
+                <marker date="1480351944163" expanded="true" signature="22014:22079" ph="SELECT IS_DE... CUSTOMER_BILLED_TO" />
+                <marker date="1480351944163" expanded="true" signature="22138:22204" ph="DELETE FROM " />
+                <marker date="1480351944163" expanded="true" signature="22239:22315" ph="UPDATE CUSTO... " />
+                <marker date="1480351944163" expanded="true" signature="22353:22570" ph="UPDATE CUSTO... " />
+                <marker date="1480351944163" expanded="true" signature="22396:22457" ph="SELECT IS_DE... CUSTOMER_BILLED_TO" />
+                <marker date="1480351944163" expanded="true" signature="24559:24632" ph="SELECT , IS_... " />
+                <marker date="1480351944163" expanded="true" signature="24662:24690" ph="SELECT STREE... ADDRESS" />
+                <marker date="1480351944163" expanded="true" signature="24662:24733" ph="SELECT CARD_... CREDIT_CARD" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="userCards.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/store/templates/store/userCards.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cardsForm.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/store/templates/store/cardsForm.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="76" column="40" lean-forward="false" selection-start-line="76" selection-start-column="40" selection-end-line="76" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="modalForm.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/store/templates/store/modalForm.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="40" lean-forward="true" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="userCards.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/store/static/js/userCards.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="profile.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/store/templates/store/profile.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="62" column="44" lean-forward="false" selection-start-line="62" selection-start-column="44" selection-end-line="62" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>setDefaultLiving</find>
+      <find>SQLSelectCustomerLives</find>
+      <find>updateLivingAddress</find>
+      <find>livesAt</find>
+      <find>SQLDeleteCustomerLives</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/store/templates/store/modalForm.html" />
+        <option value="$PROJECT_DIR$/store/templates/store/shippingAddress.html" />
+        <option value="$PROJECT_DIR$/store/templates/store/billingAddress.html" />
+        <option value="$PROJECT_DIR$/store/static/js/shippingAddress.js" />
+        <option value="$PROJECT_DIR$/store/static/js/billingAddress.js" />
+        <option value="$PROJECT_DIR$/store/templates/store/profile.html" />
+        <option value="$PROJECT_DIR$/store/urls.py" />
+        <option value="$PROJECT_DIR$/store/views.py" />
+        <option value="$PROJECT_DIR$/store/static/js/useerCards.js" />
+        <option value="$PROJECT_DIR$/store/static/js/carsFrom.html" />
+        <option value="$PROJECT_DIR$/store/templates/store/userCards.html" />
+        <option value="$PROJECT_DIR$/store/templates/store/cardsForm.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>false</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>false</other-services-enabled>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="-1" />
+    <option name="width" value="1366" />
+    <option name="height" value="741" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OnlineGroceryStore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OnlineGroceryStore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OnlineGroceryStore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OnlineGroceryStore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="store" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OnlineGroceryStore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OnlineGroceryStore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="store" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="store" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OnlineGroceryStore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OnlineGroceryStore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="store" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OnlineGroceryStore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OnlineGroceryStore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OnlineGroceryStore" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="js.eslint.eslintPackage" value="" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Oracle" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/store/templates/store" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Django server.OnlineGroceryStore">
+    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="OnlineGroceryStore" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="OnlineGroceryStore" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="OnlineGroceryStore" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="OnlineGroceryStore" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="OnlineGroceryStore" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <module name="OnlineGroceryStore" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="OnlineGroceryStore" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="OnlineGroceryStore" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="OnlineGroceryStore" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="OnlineGroceryStore" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="OnlineGroceryStore" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="OnlineGroceryStore" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="OnlineGroceryStore.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="OnlineGroceryStore" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Django server.OnlineGroceryStore" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9d48b56a-06ea-4f04-807b-42cfee6d4245" name="Default" comment="" />
+      <created>1480185616711</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1480185616711</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="-1" width="1366" height="741" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17272727" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39935064" sideWeight="0.50292826" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21212122" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288364" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32715008" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36762226" sideWeight="0.49707174" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+      <option name="time" value="9" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/store/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="54" lean-forward="false" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+            <marker date="1480351944163" expanded="true" signature="389:575" ph="SELECT ADDR_... ADDRESS" />
+            <marker date="1480351944163" expanded="true" signature="601:934" ph="INSERT INTO ADDRESS... " />
+            <marker date="1480351944163" expanded="true" signature="681:934" ph="SELECT :1,:2... DUAL" />
+            <marker date="1480351944163" expanded="true" signature="743:791" ph="SELECT 1 FRO... ADDRESS" />
+            <marker date="1480351944163" expanded="true" signature="967:1042" ph="INSERT INTO CUSTOMER_LIVES... " />
+            <marker date="1480351944163" expanded="true" signature="2001:2064" ph="INSERT INTO LOG_IN_DETAILS... " />
+            <marker date="1480351944163" expanded="true" signature="2093:2160" ph="INSERT INTO CUSTOMER... " />
+            <marker date="1480351944163" expanded="true" signature="2187:2235" ph="SELECT CUSTO... CUSTOMER" />
+            <marker date="1480351944163" expanded="true" signature="3824:3883" ph="SELECT LOG_I... LOG_IN_DETAILS" />
+            <marker date="1480351944163" expanded="true" signature="4872:4950" ph="SELECT CUSTO... CUSTOMER" />
+            <marker date="1480351944163" expanded="true" signature="5702:5783" ph="SELECT ADDR_... CUSTOMER_LIVES" />
+            <marker date="1480351944163" expanded="true" signature="5816:5900" ph="SELECT ADDR_... CUSTOMER_BILLED_TO" />
+            <marker date="1480351944163" expanded="true" signature="5931:5991" ph="SELECT CARD_... CUSTOMER_HAS_CARD" />
+            <marker date="1480351944163" expanded="true" signature="6020:6092" ph="SELECT CARD_... CREDIT_CARD" />
+            <marker date="1480351944163" expanded="true" signature="6118:6212" ph="SELECT STREE... ADDRESS" />
+            <marker date="1480351944163" expanded="true" signature="8326:8395" ph="SELECT ADDR_... CUSTOMER_LIVES" />
+            <marker date="1480351944163" expanded="true" signature="8421:8515" ph="SELECT STREE... ADDRESS" />
+            <marker date="1480351944163" expanded="true" signature="9798:9914" ph="INSERT INTO CUSTOMER_LIVES... " />
+            <marker date="1480351944163" expanded="true" signature="9889:9914" ph="SELECT :1,:2... DUAL" />
+            <marker date="1480351944163" expanded="true" signature="10119:10200" ph="SELECT ADDR_... CUSTOMER_LIVES" />
+            <marker date="1480351944163" expanded="true" signature="10232:10312" ph="UPDATE CUSTO... " />
+            <marker date="1480351944163" expanded="true" signature="12097:12178" ph="SELECT ADDR_... CUSTOMER_LIVES" />
+            <marker date="1480351944163" expanded="true" signature="12210:12269" ph="UPDATE CUSTO... " />
+            <marker date="1480351944163" expanded="true" signature="13022:13084" ph="DELETE FROM " />
+            <marker date="1480351944163" expanded="true" signature="13668:13844" ph="INSERT INTO CUSTOMER_LIVES... " />
+            <marker date="1480351944163" expanded="true" signature="13761:13822" ph="SELECT IS_DE... CUSTOMER_LIVES" />
+            <marker date="1480351944163" expanded="true" signature="13878:13940" ph="DELETE FROM " />
+            <marker date="1480351944163" expanded="true" signature="13972:14044" ph="UPDATE CUSTO... " />
+            <marker date="1480351944163" expanded="true" signature="14081:14296" ph="UPDATE CUSTO... " />
+            <marker date="1480351944163" expanded="true" signature="14120:14181" ph="SELECT IS_DE... CUSTOMER_BILLED_TO" />
+            <marker date="1480351944163" expanded="true" signature="16396:16469" ph="SELECT ADDR_... CUSTOMER_BILLED_TO" />
+            <marker date="1480351944163" expanded="true" signature="16495:16589" ph="SELECT STREE... ADDRESS" />
+            <marker date="1480351944163" expanded="true" signature="17841:17965" ph="INSERT INTO CUSTOMER_BILLED_TO... " />
+            <marker date="1480351944163" expanded="true" signature="17940:17965" ph="SELECT :1,:2... DUAL" />
+            <marker date="1480351944163" expanded="true" signature="18177:18262" ph="SELECT ADDR_... CUSTOMER_BILLED_TO" />
+            <marker date="1480351944163" expanded="true" signature="18297:18381" ph="UPDATE CUSTO... " />
+            <marker date="1480351944163" expanded="true" signature="20259:20344" ph="SELECT ADDR_... CUSTOMER_BILLED_TO" />
+            <marker date="1480351944163" expanded="true" signature="20379:20442" ph="UPDATE CUSTO... " />
+            <marker date="1480351944163" expanded="true" signature="21230:21296" ph="DELETE FROM " />
+            <marker date="1480351944163" expanded="true" signature="21913:22101" ph="INSERT INTO CUSTOMER_BILLED_TO... " />
+            <marker date="1480351944163" expanded="true" signature="22014:22079" ph="SELECT IS_DE... CUSTOMER_BILLED_TO" />
+            <marker date="1480351944163" expanded="true" signature="22138:22204" ph="DELETE FROM " />
+            <marker date="1480351944163" expanded="true" signature="22239:22315" ph="UPDATE CUSTO... " />
+            <marker date="1480351944163" expanded="true" signature="22353:22570" ph="UPDATE CUSTO... " />
+            <marker date="1480351944163" expanded="true" signature="22396:22457" ph="SELECT IS_DE... CUSTOMER_BILLED_TO" />
+            <marker date="1480351944163" expanded="true" signature="24559:24632" ph="SELECT , IS_... " />
+            <marker date="1480351944163" expanded="true" signature="24662:24690" ph="SELECT STREE... ADDRESS" />
+            <marker date="1480351944163" expanded="true" signature="24662:24733" ph="SELECT CARD_... CREDIT_CARD" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store/templates/store/signUpSuccess.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="14" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OnlineGroceryStore/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/1f4eccb9-a917-4b1e-82b5-844c256fe896/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/9f3c0b10-71f2-483e-849d-9a626630f0c8/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OnlineGroceryStore/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-960">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/78f97950/1f4eccb9-a917-4b1e-82b5-844c256fe896/VPOLAVARAPU1.CUSTOMER_BILLED_TO">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store/templates/store/billingAddress.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="18" lean-forward="false" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="184" column="0" lean-forward="false" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store/static/js/signIn.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store/static/js/billingAddress.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="130" column="21" lean-forward="true" selection-start-line="130" selection-start-column="21" selection-end-line="130" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store/static/js/shippingAddress.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="176" column="21" lean-forward="true" selection-start-line="176" selection-start-column="21" selection-end-line="176" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store/templates/store/profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="62" column="44" lean-forward="false" selection-start-line="62" selection-start-column="44" selection-end-line="62" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store/templates/store/shippingAddress.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="10" column="31" lean-forward="true" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store/static/js/userCards.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store/templates/store/cardsForm.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="76" column="40" lean-forward="false" selection-start-line="76" selection-start-column="40" selection-end-line="76" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store/templates/store/modalForm.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="40" lean-forward="true" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store/templates/store/userCards.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="67" lean-forward="true" selection-start-line="11" selection-start-column="67" selection-end-line="11" selection-end-column="67" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="633" column="33" lean-forward="true" selection-start-line="633" selection-start-column="33" selection-end-line="633" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+            <marker date="1480351944163" expanded="true" signature="389:575" ph="SELECT ADDR_... ADDRESS" />
+            <marker date="1480351944163" expanded="true" signature="601:934" ph="INSERT INTO ADDRESS... " />
+            <marker date="1480351944163" expanded="true" signature="681:934" ph="SELECT :1,:2... DUAL" />
+            <marker date="1480351944163" expanded="true" signature="743:791" ph="SELECT 1 FRO... ADDRESS" />
+            <marker date="1480351944163" expanded="true" signature="967:1042" ph="INSERT INTO CUSTOMER_LIVES... " />
+            <marker date="1480351944163" expanded="true" signature="2001:2064" ph="INSERT INTO LOG_IN_DETAILS... " />
+            <marker date="1480351944163" expanded="true" signature="2093:2160" ph="INSERT INTO CUSTOMER... " />
+            <marker date="1480351944163" expanded="true" signature="2187:2235" ph="SELECT CUSTO... CUSTOMER" />
+            <marker date="1480351944163" expanded="true" signature="3824:3883" ph="SELECT LOG_I... LOG_IN_DETAILS" />
+            <marker date="1480351944163" expanded="true" signature="4872:4950" ph="SELECT CUSTO... CUSTOMER" />
+            <marker date="1480351944163" expanded="true" signature="5702:5783" ph="SELECT ADDR_... CUSTOMER_LIVES" />
+            <marker date="1480351944163" expanded="true" signature="5816:5900" ph="SELECT ADDR_... CUSTOMER_BILLED_TO" />
+            <marker date="1480351944163" expanded="true" signature="5931:5991" ph="SELECT CARD_... CUSTOMER_HAS_CARD" />
+            <marker date="1480351944163" expanded="true" signature="6020:6092" ph="SELECT CARD_... CREDIT_CARD" />
+            <marker date="1480351944163" expanded="true" signature="6118:6212" ph="SELECT STREE... ADDRESS" />
+            <marker date="1480351944163" expanded="true" signature="8326:8395" ph="SELECT ADDR_... CUSTOMER_LIVES" />
+            <marker date="1480351944163" expanded="true" signature="8421:8515" ph="SELECT STREE... ADDRESS" />
+            <marker date="1480351944163" expanded="true" signature="9798:9914" ph="INSERT INTO CUSTOMER_LIVES... " />
+            <marker date="1480351944163" expanded="true" signature="9889:9914" ph="SELECT :1,:2... DUAL" />
+            <marker date="1480351944163" expanded="true" signature="10119:10200" ph="SELECT ADDR_... CUSTOMER_LIVES" />
+            <marker date="1480351944163" expanded="true" signature="10232:10312" ph="UPDATE CUSTO... " />
+            <marker date="1480351944163" expanded="true" signature="12097:12178" ph="SELECT ADDR_... CUSTOMER_LIVES" />
+            <marker date="1480351944163" expanded="true" signature="12210:12269" ph="UPDATE CUSTO... " />
+            <marker date="1480351944163" expanded="true" signature="13022:13084" ph="DELETE FROM " />
+            <marker date="1480351944163" expanded="true" signature="13668:13844" ph="INSERT INTO CUSTOMER_LIVES... " />
+            <marker date="1480351944163" expanded="true" signature="13761:13822" ph="SELECT IS_DE... CUSTOMER_LIVES" />
+            <marker date="1480351944163" expanded="true" signature="13878:13940" ph="DELETE FROM " />
+            <marker date="1480351944163" expanded="true" signature="13972:14044" ph="UPDATE CUSTO... " />
+            <marker date="1480351944163" expanded="true" signature="14081:14296" ph="UPDATE CUSTO... " />
+            <marker date="1480351944163" expanded="true" signature="14120:14181" ph="SELECT IS_DE... CUSTOMER_BILLED_TO" />
+            <marker date="1480351944163" expanded="true" signature="16396:16469" ph="SELECT ADDR_... CUSTOMER_BILLED_TO" />
+            <marker date="1480351944163" expanded="true" signature="16495:16589" ph="SELECT STREE... ADDRESS" />
+            <marker date="1480351944163" expanded="true" signature="17841:17965" ph="INSERT INTO CUSTOMER_BILLED_TO... " />
+            <marker date="1480351944163" expanded="true" signature="17940:17965" ph="SELECT :1,:2... DUAL" />
+            <marker date="1480351944163" expanded="true" signature="18177:18262" ph="SELECT ADDR_... CUSTOMER_BILLED_TO" />
+            <marker date="1480351944163" expanded="true" signature="18297:18381" ph="UPDATE CUSTO... " />
+            <marker date="1480351944163" expanded="true" signature="20259:20344" ph="SELECT ADDR_... CUSTOMER_BILLED_TO" />
+            <marker date="1480351944163" expanded="true" signature="20379:20442" ph="UPDATE CUSTO... " />
+            <marker date="1480351944163" expanded="true" signature="21230:21296" ph="DELETE FROM " />
+            <marker date="1480351944163" expanded="true" signature="21913:22101" ph="INSERT INTO CUSTOMER_BILLED_TO... " />
+            <marker date="1480351944163" expanded="true" signature="22014:22079" ph="SELECT IS_DE... CUSTOMER_BILLED_TO" />
+            <marker date="1480351944163" expanded="true" signature="22138:22204" ph="DELETE FROM " />
+            <marker date="1480351944163" expanded="true" signature="22239:22315" ph="UPDATE CUSTO... " />
+            <marker date="1480351944163" expanded="true" signature="22353:22570" ph="UPDATE CUSTO... " />
+            <marker date="1480351944163" expanded="true" signature="22396:22457" ph="SELECT IS_DE... CUSTOMER_BILLED_TO" />
+            <marker date="1480351944163" expanded="true" signature="24559:24632" ph="SELECT , IS_... " />
+            <marker date="1480351944163" expanded="true" signature="24662:24690" ph="SELECT STREE... ADDRESS" />
+            <marker date="1480351944163" expanded="true" signature="24662:24733" ph="SELECT CARD_... CREDIT_CARD" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

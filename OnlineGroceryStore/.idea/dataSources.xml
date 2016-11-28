@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="@fourier.cs.iit.edupycharm" read-only="true" uuid="1f4eccb9-a917-4b1e-82b5-844c256fe896">
+      <driver-ref>oracle</driver-ref>
+      <synchronize>true</synchronize>
+      <auto-commit>false</auto-commit>
+      <jdbc-driver>oracle.jdbc.OracleDriver</jdbc-driver>
+      <jdbc-url>jdbc:oracle:thin:@fourier.cs.iit.edu:1521:orcl</jdbc-url>
+    </data-source>
+  </component>
+</project>

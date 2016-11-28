@@ -1,0 +1,68 @@
+  {% extends 'store/base_after_login.html' %}
+  {% block content %}
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Welcome Back, {{name}}</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <p style="color:Orange"><strong>Default Shipping Address</strong></p>
+            <address>
+               <strong>{{ name }}</strong><br>
+              {% ifnotequal livesAtStreet '--' %}
+                 {{ livesAtStreet }}<br>
+              {% endifnotequal %}
+              {% ifnotequal livesAtStreetName '--' %}
+                 {{ livesAtStreetName }}<br>
+              {% endifnotequal %}
+              {{ livesAtAptNum }}<br>
+              {{ livesAtCity }}<br>
+              {{ livesAtState }}<br>
+              {{ livesAtZip }}<br>
+            </address>
+            <p><a href='{% url 'displayShippiningAddress' %}'>Change/Add Shipping Address</a></p>
+          </div>
+          <div class="col-md-4">
+            <p style="color: Orange"><strong>Default Billing Address</strong></p>
+            {% if billAtZip %}
+              <address>
+                <strong>{{ name }}</strong><br>
+                {% ifnotequal livesAtStreet '--' %}
+                   {{ billAtStreet }}<br>
+                {% endifnotequal %}
+                {% ifnotequal livesAtStreetName '--' %}
+                   {{ billAtStreetName }}<br>
+                {% endifnotequal %}
+                {{ billAtAptNum }}<br>
+                {{ billAtCity }}<br>
+                {{ billAtState }}<br>
+                {{ billAtZip }}<br>
+              </address>
+            {% else %}
+              <p>No address yet.</p>
+            {% endif %}
+            <p><a href='{% url 'displayBillingAddress' %}'>Change/Add Billing Address</a></p>
+          </div>
+          <div class="col-md-4">
+            <p style="color: Orange"><strong>Default Credit/Debit Card</strong></p>
+            {% if cardNum %}
+                <address>
+                  <strong>xxxx-xxxx-xxxx-{{cardNum|slice:"12:16"}}</strong><br>
+                  Exp: {{expMonth}}/{{expYear}} <br>
+                </address>
+             {% else %}
+                <p> Nothing yet</p>
+             {% endif %} 
+            <p><a href='{% url 'displayCards' %}'>Add/Remove Card</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endblock %}
