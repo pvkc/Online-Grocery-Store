@@ -652,3 +652,36 @@ def diplaycards(request):
     context['title'] = 'View/Edit Cards'
     context['name'] = request.session['name']
     return render(request, 'store/userCards.html', context)
+
+@csrf_exempt
+def addNewCard(request):
+    SQLInsertCardDetails = '''INSERT INTO CREDIT_CARD(CARD_NUM, OWNER_NAME, EXP_MONTH, EXP_YEAR, CVV)
+                              SELECT :1,:2,:3,:4,:5 FROM DUAL WHERE NOT EXISTS
+                              (SELECT 1 FROM CREDIT_CARD WHERE CARD_NUM=:1 AND OWNER_NAME=:2 AND EXP_MONTH=:3 AND EXP_YEAR=:4 AND CVV=:5)'''
+    SQLSelectCardDetails = "SELECT CARD_ID,CARD_NUM FROM CREDIT_CARD WHERE CARD_NUM=:1"
+    SQLInsertCustomerCard = '''INSERT INTO CUSTOMER_HAS_CARD(CUSTOMER_ID, CARD_ID) VALUES (:1,:2)'''
+
+    conn = openDbConnection()
+    print request.POST
+    if conn == ERROR:
+        return HttpResponseNotFound("DB down, Try Later")
+
+    try:
+        curr = conn.cursor()
+        curr.execute(SQLInsertCardDetails,(request.POST["cardNum"],request.POST["cardName"].upper(), request.POST["cardMonth"], request.POST["cardYear"], request.POST["cardCvv"]))
+        curr.execute(SQLSelectCardDetails,(request.POST["cardNum"],))
+        cardId = curr.fetchall()[0][0]
+        curr.execute(SQLInsertCustomerCard,(request.session["custId"], cardId))
+
+    except db.DatabaseError, exp:
+        print exp
+        conn.rollback()
+        conn.close()
+        if str(exp).startswith('ORA-00001:'):
+            return HttpResponse("Data Already Exists", status=422)
+        raise
+        return HttpResponseNotFound('Execution Failed, Try Later')
+
+    conn.commit()
+    conn.close()
+    return HttpResponse(status=200)

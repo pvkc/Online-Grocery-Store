@@ -4,10 +4,10 @@
 <div class="section">
       <div class="container">
         <div class="row">
-            <h1>Shipping Address</h1>
-            <input type="submit" name="AddCard" value="New Card" data-toggle="modal" data-target="#addAddress">
-             {% include 'store/cardsForm.html' with submitId="addNewAddr" modalId="addAddress" title="New Address" dispCheckBox="block" ix="1"%}
-             {% include 'store/modalForm.html' with submitId="updateNewAddr" modalId="updateAddress" title="Update Address" dispCheckBox="None" ix="2" %}
+            <h1>Credit/Debit Cards</h1>
+            <input type="submit" name="AddCard" value="New Card" data-toggle="modal" data-target="#addCard">
+             {% include 'store/cardsForm.html' with submitId="submitAddCard" modalId="addCard" title="New Card" dispCheckBox="None" ix="1"%}
+             {% include 'store/modalForm.html' with submitId="submitUpdateCard" modalId="updateCard" title="Update Card" dispCheckBox="None" ix="2" %}
           <table class="table">
             <thead>
               <tr>

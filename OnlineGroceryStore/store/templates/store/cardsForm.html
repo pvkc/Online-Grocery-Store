@@ -26,59 +26,38 @@
                         </div>
                         <div class="form-group">
                             <div class="col-sm-2 col-sm-offset-2">
-                             <label for="expMonth_{{ ix }}" class="control-label">Exp Month</label>
+                                <label for="expMonth_{{ ix }}" class="control-label">Exp Month</label>
                             </div>
                             <div class="col-lg-4">
-                             <!input type="text" class="form-control" id="expMonth_{{ ix }}" name='expMonth' placeholder="expMonth" required>
-                                <div class="dropdown">
-                                    <button class="btn btn-primary dropdown-toggle" id="expMonth_{{ ix }}" type="button" data-toggle="dropdown">Month</button>
-                                         <ul class="dropdown-menu">
-                                            {% for month in "123456789123" %}
-                                                <li><a href="#">{{ forloop.counter }}</a></li>
-                                            {% endfor %}
-                                        </ul>
-                                </div>
+                                <select id="expMonth_{{ ix }}" class="selectpicker">
+                                    {% for foo in "123456789123" %}
+                                        <option>{{ forloop.counter }}</option>
+                                    {% endfor %}
+                                </select>
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="col-sm-2 col-sm-offset-2">
-                             <label for="expYear_{{ ix }}" class="control-label">Exp Month</label>
+                             <label for="expYear_{{ ix }}" class="control-label">Exp Year</label>
                             </div>
-                            <div class="col-lg-4">
-                                <div class="dropdown">
-                                    <button class="btn btn-primary dropdown-toggle" id="expMonth_{{ ix }}" type="button" data-toggle="dropdown" required>Month</button>
-                                         <ul class="dropdown-menu">
-                                            {% for month in "123456789123" %}
-                                                <li><a href="#">20{{ forloop.counter|add:"15" }}</a></li>
-                                            {% endfor %}
-                                        </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-sm-2 col-sm-offset-2">
-                             <label for="state_{{ ix }}" class="control-label">State</label>
-                            </div>
-                            <div class="col-lg-4">
-                             <input type="text" class="form-control" id="state_{{ ix }}" name='state' placeholder="State" required>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-sm-2 col-sm-offset-2">
-                             <label for="zipCode_{{ ix }}" class="control-label">Zip Code</label>
-                            </div>
-                            <div class="col-lg-4">
-                             <input type="text" class="form-control" id="zipCode_{{ ix }}" name='zipCode' placeholder="Zip" required>
-                            </div>
-                        </div>
-                        <div class="form-group" style="display: {{ dispCheckBox }}">
-                            <div class=" col-sm-offset-2">
-                                <label>
-                                  <input id='setDefault_{{ ix }}'  type="checkbox"> Make this default
-                                </label>
-                            </div>
-                        </div>
+                                <div class="col-lg-4">
 
+                                    <select id="expYear_{{ ix }}" class="selectpicker">
+                                        {% for foo in "123456789123" %}
+                                            <option>20{{ forloop.counter|add:"15" }}</option>
+                                        {% endfor %}
+                                    </select>
+
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-2 col-sm-offset-2">
+                             <label for="cvv_{{ ix }}" class="control-label">CVV</label>
+                            </div>
+                            <div class="col-sm-2">
+                             <input type="text" class="form-control" id="cvv_{{ ix }}" name='cvv' placeholder="CVV" required>
+                            </div>
+                        </div>
                          <div class="modal-footer">
                   <button type="submit" class="btn btn-default" id={{ submitId }}>Submit</button>
                   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
