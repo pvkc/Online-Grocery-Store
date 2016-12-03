@@ -51,7 +51,7 @@
             <p><a href='{% url 'displayBillingAddress' %}'>Change/Add Billing Address</a></p>
           </div>
           <div class="col-md-4">
-            <p style="color: Orange"><strong>Default Credit/Debit Card</strong></p>
+            <p style="color: Orange"><strong>Credit/Debit Card</strong></p>
             {% if cardNum %}
                 <address>
                   <strong>xxxx-xxxx-xxxx-{{cardNum|slice:"12:16"}}</strong><br>

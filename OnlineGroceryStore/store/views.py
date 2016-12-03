@@ -207,7 +207,7 @@ def profile(request):
         for data in curr.fetchall():
             curr.execute(SQLSelectCreditCard, data)
             details = curr.fetchall()
-            context['cardNum'], context['expMonth'], context['expYear'] = details
+            context['cardNum'], context['expMonth'], context['expYear'] = details[0]
 
         if livesAtAddrId:
             curr.execute(SQLSelectAddress, (livesAtAddrId,))
@@ -657,7 +657,7 @@ def diplaycards(request):
 def addNewCard(request):
     SQLInsertCardDetails = '''INSERT INTO CREDIT_CARD(CARD_NUM, OWNER_NAME, EXP_MONTH, EXP_YEAR, CVV)
                               SELECT :1,:2,:3,:4,:5 FROM DUAL WHERE NOT EXISTS
-                              (SELECT 1 FROM CREDIT_CARD WHERE CARD_NUM=:1 AND OWNER_NAME=:2 AND EXP_MONTH=:3 AND EXP_YEAR=:4 AND CVV=:5)'''
+                              (SELECT 1 FROM CREDIT_CARD WHERE CARD_NUM=:1)'''
     SQLSelectCardDetails = "SELECT CARD_ID,CARD_NUM FROM CREDIT_CARD WHERE CARD_NUM=:1"
     SQLInsertCustomerCard = '''INSERT INTO CUSTOMER_HAS_CARD(CUSTOMER_ID, CARD_ID) VALUES (:1,:2)'''
 
@@ -679,7 +679,64 @@ def addNewCard(request):
         conn.close()
         if str(exp).startswith('ORA-00001:'):
             return HttpResponse("Data Already Exists", status=422)
-        raise
+        #raise
+        return HttpResponseNotFound('Execution Failed, Try Later')
+
+    conn.commit()
+    conn.close()
+    return HttpResponse(status=200)
+
+@csrf_exempt
+def updateCard(request):
+    SQLInsertCardDetails = '''INSERT INTO CREDIT_CARD(CARD_NUM, OWNER_NAME, EXP_MONTH, EXP_YEAR, CVV)
+                                  SELECT :1,:2,:3,:4,:5 FROM DUAL WHERE NOT EXISTS
+                                  (SELECT 1 FROM CREDIT_CARD WHERE CARD_NUM=:1)'''
+    SQLSelectCardDetails = "SELECT CARD_ID,CARD_NUM FROM CREDIT_CARD WHERE CARD_NUM=:1"
+    SQLUpdateCustomerCard = '''UPDATE CUSTOMER_HAS_CARD SET CARD_ID = :1 WHERE CUSTOMER_ID =:2 AND CARD_ID = :3 '''
+
+    conn = openDbConnection()
+    print request.POST
+    if conn == ERROR:
+        return HttpResponseNotFound("DB down, Try Later")
+
+    try:
+        curr = conn.cursor()
+        curr.execute(SQLInsertCardDetails,(request.POST["cardNum"],request.POST["cardName"].upper(), request.POST["cardMonth"], request.POST["cardYear"], request.POST["cardCvv"]))
+        curr.execute(SQLSelectCardDetails,(request.POST["cardNum"],))
+        cardId = curr.fetchall()[0][0]
+        curr.execute(SQLUpdateCustomerCard,(cardId, request.session["custId"], request.session['cardId'][request.POST['cardId']]))
+
+    except db.DatabaseError, exp:
+        print exp
+        conn.rollback()
+        conn.close()
+        if str(exp).startswith('ORA-00001:'):
+            return HttpResponse("Data Already Exists", status=422)
+        #raise
+        return HttpResponseNotFound('Execution Failed, Try Later')
+
+    conn.commit()
+    conn.close()
+    return HttpResponse(status=200)
+
+@csrf_exempt
+def deleteCard(request):
+    SQLDeleteCustomerCard = 'DELETE FROM CUSTOMER_HAS_CARD WHERE CUSTOMER_ID =:1 AND CARD_ID =:2'
+    conn = openDbConnection()
+    print request.POST
+    if conn == ERROR:
+        return HttpResponseNotFound("DB down, Try Later")
+
+    try:
+        curr = conn.cursor()
+        curr.execute(SQLDeleteCustomerCard,
+                     (request.session["custId"], request.session['cardId'][request.POST['cardId']]))
+
+    except db.DatabaseError, exp:
+        print exp
+        conn.rollback()
+        conn.close()
+        # raise
         return HttpResponseNotFound('Execution Failed, Try Later')
 
     conn.commit()

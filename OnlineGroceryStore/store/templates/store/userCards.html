@@ -7,7 +7,7 @@
             <h1>Credit/Debit Cards</h1>
             <input type="submit" name="AddCard" value="New Card" data-toggle="modal" data-target="#addCard">
              {% include 'store/cardsForm.html' with submitId="submitAddCard" modalId="addCard" title="New Card" dispCheckBox="None" ix="1"%}
-             {% include 'store/modalForm.html' with submitId="submitUpdateCard" modalId="updateCard" title="Update Card" dispCheckBox="None" ix="2" %}
+             {% include 'store/cardsForm.html' with submitId="submitUpdateCard" modalId="updateCard" title="Update Card" dispCheckBox="None" ix="2" %}
           <table class="table">
             <thead>
               <tr>
@@ -29,8 +29,8 @@
                     </address>
                   </td>
                   <td>
-                    <input type="button" onclick="passData(this)" data-toggle="modal" data-target="#updateAddress" name={{ id }} id=editAddress{{forloop.counter}} value="Edit">
-                     <p><input type="submit" onclick="deleteAddress(this)" name={{ id }} id=delAddress{{forloop.counter}} value="Delete"></p>
+                    <input type="button" onclick="passData(this)" data-toggle="modal" data-target="#updateCard" name={{ id }} id=editAddress{{forloop.counter}} value="Edit">
+                     <p><input type="submit" onclick="deleteCard(this)" name={{ id }} id=delAddress{{forloop.counter}} value="Delete"></p>
                     <br>
                   </td>
                 </tr>

@@ -103,8 +103,8 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/store/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="45" lean-forward="false" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
+            <state relative-caret-position="276">
+              <caret line="20" column="49" lean-forward="true" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -112,78 +112,85 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/store/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="671" column="8" lean-forward="false" selection-start-line="671" selection-start-column="8" selection-end-line="671" selection-end-column="8" />
+            <state relative-caret-position="171">
+              <caret line="659" column="74" lean-forward="false" selection-start-line="659" selection-start-column="74" selection-end-line="659" selection-end-column="74" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
-                <marker date="1480383827525" expanded="true" signature="389:575" ph="SELECT ADDR_... ADDRESS" />
-                <marker date="1480383827525" expanded="true" signature="601:934" ph="INSERT INTO ADDRESS... " />
-                <marker date="1480383827525" expanded="true" signature="681:934" ph="SELECT :1,:2... DUAL" />
-                <marker date="1480383827525" expanded="true" signature="743:791" ph="SELECT 1 FRO... ADDRESS" />
-                <marker date="1480383827525" expanded="true" signature="967:1042" ph="INSERT INTO CUSTOMER_LIVES... " />
-                <marker date="1480383827525" expanded="true" signature="2001:2064" ph="INSERT INTO LOG_IN_DETAILS... " />
-                <marker date="1480383827525" expanded="true" signature="2093:2160" ph="INSERT INTO CUSTOMER... " />
-                <marker date="1480383827525" expanded="true" signature="2187:2235" ph="SELECT CUSTO... CUSTOMER" />
-                <marker date="1480383827525" expanded="true" signature="3824:3883" ph="SELECT LOG_I... LOG_IN_DETAILS" />
-                <marker date="1480383827525" expanded="true" signature="4872:4950" ph="SELECT CUSTO... CUSTOMER" />
-                <marker date="1480383827525" expanded="true" signature="5702:5783" ph="SELECT ADDR_... CUSTOMER_LIVES" />
-                <marker date="1480383827525" expanded="true" signature="5816:5900" ph="SELECT ADDR_... CUSTOMER_BILLED_TO" />
-                <marker date="1480383827525" expanded="true" signature="5931:5991" ph="SELECT CARD_... CUSTOMER_HAS_CARD" />
-                <marker date="1480383827525" expanded="true" signature="6020:6092" ph="SELECT CARD_... CREDIT_CARD" />
-                <marker date="1480383827525" expanded="true" signature="6118:6212" ph="SELECT STREE... ADDRESS" />
-                <marker date="1480383827525" expanded="true" signature="8326:8395" ph="SELECT ADDR_... CUSTOMER_LIVES" />
-                <marker date="1480383827525" expanded="true" signature="8421:8515" ph="SELECT STREE... ADDRESS" />
-                <marker date="1480383827525" expanded="true" signature="9798:9914" ph="INSERT INTO CUSTOMER_LIVES... " />
-                <marker date="1480383827525" expanded="true" signature="9889:9914" ph="SELECT :1,:2... DUAL" />
-                <marker date="1480383827525" expanded="true" signature="10119:10200" ph="SELECT ADDR_... CUSTOMER_LIVES" />
-                <marker date="1480383827525" expanded="true" signature="10232:10312" ph="UPDATE CUSTO... " />
-                <marker date="1480383827525" expanded="true" signature="12097:12178" ph="SELECT ADDR_... CUSTOMER_LIVES" />
-                <marker date="1480383827525" expanded="true" signature="12210:12269" ph="UPDATE CUSTO... " />
-                <marker date="1480383827525" expanded="true" signature="13022:13084" ph="DELETE FROM " />
-                <marker date="1480383827525" expanded="true" signature="13668:13844" ph="INSERT INTO CUSTOMER_LIVES... " />
-                <marker date="1480383827525" expanded="true" signature="13761:13822" ph="SELECT IS_DE... CUSTOMER_LIVES" />
-                <marker date="1480383827525" expanded="true" signature="13878:13940" ph="DELETE FROM " />
-                <marker date="1480383827525" expanded="true" signature="13972:14044" ph="UPDATE CUSTO... " />
-                <marker date="1480383827525" expanded="true" signature="14081:14296" ph="UPDATE CUSTO... " />
-                <marker date="1480383827525" expanded="true" signature="14120:14181" ph="SELECT IS_DE... CUSTOMER_BILLED_TO" />
-                <marker date="1480383827525" expanded="true" signature="16396:16469" ph="SELECT ADDR_... CUSTOMER_BILLED_TO" />
-                <marker date="1480383827525" expanded="true" signature="16495:16589" ph="SELECT STREE... ADDRESS" />
-                <marker date="1480383827525" expanded="true" signature="17841:17965" ph="INSERT INTO CUSTOMER_BILLED_TO... " />
-                <marker date="1480383827525" expanded="true" signature="17940:17965" ph="SELECT :1,:2... DUAL" />
-                <marker date="1480383827525" expanded="true" signature="18177:18262" ph="SELECT ADDR_... CUSTOMER_BILLED_TO" />
-                <marker date="1480383827525" expanded="true" signature="18297:18381" ph="UPDATE CUSTO... " />
-                <marker date="1480383827525" expanded="true" signature="20259:20344" ph="SELECT ADDR_... CUSTOMER_BILLED_TO" />
-                <marker date="1480383827525" expanded="true" signature="20379:20442" ph="UPDATE CUSTO... " />
-                <marker date="1480383827525" expanded="true" signature="21230:21296" ph="DELETE FROM " />
-                <marker date="1480383827525" expanded="true" signature="21913:22101" ph="INSERT INTO CUSTOMER_BILLED_TO... " />
-                <marker date="1480383827525" expanded="true" signature="22014:22079" ph="SELECT IS_DE... CUSTOMER_BILLED_TO" />
-                <marker date="1480383827525" expanded="true" signature="22138:22204" ph="DELETE FROM " />
-                <marker date="1480383827525" expanded="true" signature="22239:22315" ph="UPDATE CUSTO... " />
-                <marker date="1480383827525" expanded="true" signature="22353:22570" ph="UPDATE CUSTO... " />
-                <marker date="1480383827525" expanded="true" signature="22396:22457" ph="SELECT IS_DE... CUSTOMER_BILLED_TO" />
-                <marker date="1480383827525" expanded="true" signature="24559:24632" ph="SELECT , IS_... " />
-                <marker date="1480383827525" expanded="true" signature="24662:24690" ph="SELECT STREE... ADDRESS" />
-                <marker date="1480383827525" expanded="true" signature="24662:24733" ph="SELECT CARD_... CREDIT_CARD" />
-                <marker date="1480383827525" expanded="true" signature="25871:25942" ph="INSERT INTO CREDIT_CARD... " />
-                <marker date="1480383827525" expanded="true" signature="25871:26159" ph="INSERT INTO CREDIT_CARD... " />
-                <marker date="1480383827525" expanded="true" signature="25973:26004" ph="SELECT (:1,:... DUAL" />
-                <marker date="1480383827525" expanded="true" signature="25973:26159" ph="SELECT :1,:2... DUAL" />
-                <marker date="1480383827525" expanded="true" signature="26053:26095" ph="SELECT 1 FRO... CREDIT_CARD" />
-                <marker date="1480383827525" expanded="true" signature="26191:26249" ph="SELECT CARD_... CREDIT_CARD" />
-                <marker date="1480383827525" expanded="true" signature="26282:26348" ph="INSERT INTO CUSTOMER_HAS_CARD... " />
+                <marker date="1480783367842" expanded="true" signature="389:575" ph="SELECT ADDR_... ADDRESS" />
+                <marker date="1480783367842" expanded="true" signature="601:934" ph="INSERT INTO ADDRESS... " />
+                <marker date="1480783367842" expanded="true" signature="681:934" ph="SELECT :1,:2... DUAL" />
+                <marker date="1480783367842" expanded="true" signature="743:791" ph="SELECT 1 FRO... ADDRESS" />
+                <marker date="1480783367842" expanded="true" signature="967:1042" ph="INSERT INTO CUSTOMER_LIVES... " />
+                <marker date="1480783367842" expanded="true" signature="2001:2064" ph="INSERT INTO LOG_IN_DETAILS... " />
+                <marker date="1480783367842" expanded="true" signature="2093:2160" ph="INSERT INTO CUSTOMER... " />
+                <marker date="1480783367842" expanded="true" signature="2187:2235" ph="SELECT CUSTO... CUSTOMER" />
+                <marker date="1480783367842" expanded="true" signature="3824:3883" ph="SELECT LOG_I... LOG_IN_DETAILS" />
+                <marker date="1480783367842" expanded="true" signature="4872:4950" ph="SELECT CUSTO... CUSTOMER" />
+                <marker date="1480783367842" expanded="true" signature="5702:5783" ph="SELECT ADDR_... CUSTOMER_LIVES" />
+                <marker date="1480783367842" expanded="true" signature="5816:5900" ph="SELECT ADDR_... CUSTOMER_BILLED_TO" />
+                <marker date="1480783367842" expanded="true" signature="5931:5991" ph="SELECT CARD_... CUSTOMER_HAS_CARD" />
+                <marker date="1480783367842" expanded="true" signature="6020:6092" ph="SELECT CARD_... CREDIT_CARD" />
+                <marker date="1480783367842" expanded="true" signature="6118:6212" ph="SELECT STREE... ADDRESS" />
+                <marker date="1480783367842" expanded="true" signature="8329:8398" ph="SELECT ADDR_... CUSTOMER_LIVES" />
+                <marker date="1480783367842" expanded="true" signature="8424:8518" ph="SELECT STREE... ADDRESS" />
+                <marker date="1480783367842" expanded="true" signature="9801:9917" ph="INSERT INTO CUSTOMER_LIVES... " />
+                <marker date="1480783367842" expanded="true" signature="9892:9917" ph="SELECT :1,:2... DUAL" />
+                <marker date="1480783367842" expanded="true" signature="10122:10203" ph="SELECT ADDR_... CUSTOMER_LIVES" />
+                <marker date="1480783367842" expanded="true" signature="10235:10315" ph="UPDATE CUSTO... " />
+                <marker date="1480783367842" expanded="true" signature="12100:12181" ph="SELECT ADDR_... CUSTOMER_LIVES" />
+                <marker date="1480783367842" expanded="true" signature="12213:12272" ph="UPDATE CUSTO... " />
+                <marker date="1480783367842" expanded="true" signature="13025:13087" ph="DELETE FROM " />
+                <marker date="1480783367842" expanded="true" signature="13671:13847" ph="INSERT INTO CUSTOMER_LIVES... " />
+                <marker date="1480783367842" expanded="true" signature="13764:13825" ph="SELECT IS_DE... CUSTOMER_LIVES" />
+                <marker date="1480783367842" expanded="true" signature="13881:13943" ph="DELETE FROM " />
+                <marker date="1480783367842" expanded="true" signature="13975:14047" ph="UPDATE CUSTO... " />
+                <marker date="1480783367842" expanded="true" signature="14084:14299" ph="UPDATE CUSTO... " />
+                <marker date="1480783367842" expanded="true" signature="14123:14184" ph="SELECT IS_DE... CUSTOMER_BILLED_TO" />
+                <marker date="1480783367842" expanded="true" signature="16399:16472" ph="SELECT ADDR_... CUSTOMER_BILLED_TO" />
+                <marker date="1480783367842" expanded="true" signature="16498:16592" ph="SELECT STREE... ADDRESS" />
+                <marker date="1480783367842" expanded="true" signature="17844:17968" ph="INSERT INTO CUSTOMER_BILLED_TO... " />
+                <marker date="1480783367842" expanded="true" signature="17943:17968" ph="SELECT :1,:2... DUAL" />
+                <marker date="1480783367842" expanded="true" signature="18180:18265" ph="SELECT ADDR_... CUSTOMER_BILLED_TO" />
+                <marker date="1480783367842" expanded="true" signature="18300:18384" ph="UPDATE CUSTO... " />
+                <marker date="1480783367842" expanded="true" signature="20262:20347" ph="SELECT ADDR_... CUSTOMER_BILLED_TO" />
+                <marker date="1480783367842" expanded="true" signature="20382:20445" ph="UPDATE CUSTO... " />
+                <marker date="1480783367842" expanded="true" signature="21233:21299" ph="DELETE FROM " />
+                <marker date="1480783367842" expanded="true" signature="21916:22104" ph="INSERT INTO CUSTOMER_BILLED_TO... " />
+                <marker date="1480783367842" expanded="true" signature="22017:22082" ph="SELECT IS_DE... CUSTOMER_BILLED_TO" />
+                <marker date="1480783367842" expanded="true" signature="22141:22207" ph="DELETE FROM " />
+                <marker date="1480783367842" expanded="true" signature="22242:22318" ph="UPDATE CUSTO... " />
+                <marker date="1480783367842" expanded="true" signature="22356:22573" ph="UPDATE CUSTO... " />
+                <marker date="1480783367842" expanded="true" signature="22399:22460" ph="SELECT IS_DE... CUSTOMER_BILLED_TO" />
+                <marker date="1480783367842" expanded="true" signature="24562:24635" ph="SELECT , IS_... " />
+                <marker date="1480783367842" expanded="true" signature="24665:24693" ph="SELECT STREE... ADDRESS" />
+                <marker date="1480783367842" expanded="true" signature="24665:24736" ph="SELECT CARD_... CREDIT_CARD" />
+                <marker date="1480783367842" expanded="true" signature="25874:25945" ph="INSERT INTO CREDIT_CARD... " />
+                <marker date="1480783367842" expanded="true" signature="25874:26100" ph="INSERT INTO CREDIT_CARD... " />
+                <marker date="1480783367842" expanded="true" signature="25976:26007" ph="SELECT (:1,:... DUAL" />
+                <marker date="1480783367842" expanded="true" signature="25976:26100" ph="SELECT :1,:2... DUAL" />
+                <marker date="1480783367842" expanded="true" signature="26056:26098" ph="SELECT 1 FRO... CREDIT_CARD" />
+                <marker date="1480783367842" expanded="true" signature="26132:26190" ph="SELECT CARD_... CREDIT_CARD" />
+                <marker date="1480783367842" expanded="true" signature="26223:26289" ph="INSERT INTO CUSTOMER_HAS_CARD... " />
+                <marker date="1480783367842" expanded="true" signature="27269:27503" ph="INSERT INTO CREDIT_CARD... " />
+                <marker date="1480783367842" expanded="true" signature="27375:27503" ph="SELECT :1,:2... DUAL" />
+                <marker date="1480783367842" expanded="true" signature="27459:27501" ph="SELECT 1 FRO... CREDIT_CARD" />
+                <marker date="1480783367842" expanded="true" signature="27535:27593" ph="SELECT CARD_... CREDIT_CARD" />
+                <marker date="1480783367842" expanded="true" signature="27626:27706" ph="UPDATE CUSTO... " />
+                <marker date="1480783367842" expanded="true" signature="27632:27689" ph="INSERT INTO CUSTOMER_HAS_CARD... " />
+                <marker date="1480783367842" expanded="true" signature="28737:28804" ph="DELETE FROM " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="userCards.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="userCards.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/store/static/js/userCards.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+            <state relative-caret-position="382">
+              <caret line="135" column="6" lean-forward="true" selection-start-line="135" selection-start-column="6" selection-end-line="135" selection-end-column="6" />
               <folding>
                 <element signature="e#0#38#0" expanded="false" />
               </folding>
@@ -191,11 +198,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="userCards.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/store/templates/store/userCards.html">
+      <file leaf-file-name="shippingAddress.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/store/static/js/shippingAddress.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="87" lean-forward="false" selection-start-line="8" selection-start-column="87" selection-end-line="8" selection-end-column="87" />
+            <state relative-caret-position="-639">
+              <caret line="91" column="9" lean-forward="true" selection-start-line="91" selection-start-column="9" selection-end-line="91" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -204,28 +211,18 @@
       <file leaf-file-name="cardsForm.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/store/templates/store/cardsForm.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="65" column="22" lean-forward="false" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="22" />
+            <state relative-caret-position="120">
+              <caret line="50" column="34" lean-forward="true" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="signIn.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/store/static/js/signIn.js">
+      <file leaf-file-name="userCards.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/store/templates/store/userCards.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="19" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="profile.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/store/templates/store/profile.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="62" column="44" lean-forward="false" selection-start-line="62" selection-start-column="44" selection-end-line="62" selection-end-column="44" />
+            <state relative-caret-position="165">
+              <caret line="32" column="64" lean-forward="false" selection-start-line="32" selection-start-column="64" selection-end-line="32" selection-end-column="64" />
               <folding />
             </state>
           </provider>
@@ -249,6 +246,7 @@
       <find>livesAt</find>
       <find>SQLDeleteCustomerLives</find>
       <find>ORA-</find>
+      <find>updateNewAddr</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -259,14 +257,14 @@
         <option value="$PROJECT_DIR$/store/templates/store/billingAddress.html" />
         <option value="$PROJECT_DIR$/store/static/js/shippingAddress.js" />
         <option value="$PROJECT_DIR$/store/static/js/billingAddress.js" />
-        <option value="$PROJECT_DIR$/store/templates/store/profile.html" />
         <option value="$PROJECT_DIR$/store/static/js/useerCards.js" />
         <option value="$PROJECT_DIR$/store/static/js/carsFrom.html" />
         <option value="$PROJECT_DIR$/store/templates/store/cardsForm.html" />
-        <option value="$PROJECT_DIR$/store/urls.py" />
+        <option value="$PROJECT_DIR$/store/templates/store/profile.html" />
         <option value="$PROJECT_DIR$/store/templates/store/userCards.html" />
-        <option value="$PROJECT_DIR$/store/views.py" />
+        <option value="$PROJECT_DIR$/store/urls.py" />
         <option value="$PROJECT_DIR$/store/static/js/userCards.js" />
+        <option value="$PROJECT_DIR$/store/views.py" />
       </list>
     </option>
   </component>
@@ -394,7 +392,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Dropbox/PG/CS542/Project" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Oracle" />
@@ -685,20 +683,20 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-1" width="1366" height="741" extended-state="7" />
-    <editor active="false" />
+    <frame x="0" y="-1" width="1366" height="741" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17272727" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39935064" sideWeight="0.50292826" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21212122" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35919055" sideWeight="0.5060606" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21212122" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288364" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32715008" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35919055" sideWeight="0.49707174" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3524452" sideWeight="0.4939394" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -723,7 +721,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="11" />
+      <option name="time" value="13" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -744,61 +742,68 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
-            <marker date="1480383827525" expanded="true" signature="389:575" ph="SELECT ADDR_... ADDRESS" />
-            <marker date="1480383827525" expanded="true" signature="601:934" ph="INSERT INTO ADDRESS... " />
-            <marker date="1480383827525" expanded="true" signature="681:934" ph="SELECT :1,:2... DUAL" />
-            <marker date="1480383827525" expanded="true" signature="743:791" ph="SELECT 1 FRO... ADDRESS" />
-            <marker date="1480383827525" expanded="true" signature="967:1042" ph="INSERT INTO CUSTOMER_LIVES... " />
-            <marker date="1480383827525" expanded="true" signature="2001:2064" ph="INSERT INTO LOG_IN_DETAILS... " />
-            <marker date="1480383827525" expanded="true" signature="2093:2160" ph="INSERT INTO CUSTOMER... " />
-            <marker date="1480383827525" expanded="true" signature="2187:2235" ph="SELECT CUSTO... CUSTOMER" />
-            <marker date="1480383827525" expanded="true" signature="3824:3883" ph="SELECT LOG_I... LOG_IN_DETAILS" />
-            <marker date="1480383827525" expanded="true" signature="4872:4950" ph="SELECT CUSTO... CUSTOMER" />
-            <marker date="1480383827525" expanded="true" signature="5702:5783" ph="SELECT ADDR_... CUSTOMER_LIVES" />
-            <marker date="1480383827525" expanded="true" signature="5816:5900" ph="SELECT ADDR_... CUSTOMER_BILLED_TO" />
-            <marker date="1480383827525" expanded="true" signature="5931:5991" ph="SELECT CARD_... CUSTOMER_HAS_CARD" />
-            <marker date="1480383827525" expanded="true" signature="6020:6092" ph="SELECT CARD_... CREDIT_CARD" />
-            <marker date="1480383827525" expanded="true" signature="6118:6212" ph="SELECT STREE... ADDRESS" />
-            <marker date="1480383827525" expanded="true" signature="8326:8395" ph="SELECT ADDR_... CUSTOMER_LIVES" />
-            <marker date="1480383827525" expanded="true" signature="8421:8515" ph="SELECT STREE... ADDRESS" />
-            <marker date="1480383827525" expanded="true" signature="9798:9914" ph="INSERT INTO CUSTOMER_LIVES... " />
-            <marker date="1480383827525" expanded="true" signature="9889:9914" ph="SELECT :1,:2... DUAL" />
-            <marker date="1480383827525" expanded="true" signature="10119:10200" ph="SELECT ADDR_... CUSTOMER_LIVES" />
-            <marker date="1480383827525" expanded="true" signature="10232:10312" ph="UPDATE CUSTO... " />
-            <marker date="1480383827525" expanded="true" signature="12097:12178" ph="SELECT ADDR_... CUSTOMER_LIVES" />
-            <marker date="1480383827525" expanded="true" signature="12210:12269" ph="UPDATE CUSTO... " />
-            <marker date="1480383827525" expanded="true" signature="13022:13084" ph="DELETE FROM " />
-            <marker date="1480383827525" expanded="true" signature="13668:13844" ph="INSERT INTO CUSTOMER_LIVES... " />
-            <marker date="1480383827525" expanded="true" signature="13761:13822" ph="SELECT IS_DE... CUSTOMER_LIVES" />
-            <marker date="1480383827525" expanded="true" signature="13878:13940" ph="DELETE FROM " />
-            <marker date="1480383827525" expanded="true" signature="13972:14044" ph="UPDATE CUSTO... " />
-            <marker date="1480383827525" expanded="true" signature="14081:14296" ph="UPDATE CUSTO... " />
-            <marker date="1480383827525" expanded="true" signature="14120:14181" ph="SELECT IS_DE... CUSTOMER_BILLED_TO" />
-            <marker date="1480383827525" expanded="true" signature="16396:16469" ph="SELECT ADDR_... CUSTOMER_BILLED_TO" />
-            <marker date="1480383827525" expanded="true" signature="16495:16589" ph="SELECT STREE... ADDRESS" />
-            <marker date="1480383827525" expanded="true" signature="17841:17965" ph="INSERT INTO CUSTOMER_BILLED_TO... " />
-            <marker date="1480383827525" expanded="true" signature="17940:17965" ph="SELECT :1,:2... DUAL" />
-            <marker date="1480383827525" expanded="true" signature="18177:18262" ph="SELECT ADDR_... CUSTOMER_BILLED_TO" />
-            <marker date="1480383827525" expanded="true" signature="18297:18381" ph="UPDATE CUSTO... " />
-            <marker date="1480383827525" expanded="true" signature="20259:20344" ph="SELECT ADDR_... CUSTOMER_BILLED_TO" />
-            <marker date="1480383827525" expanded="true" signature="20379:20442" ph="UPDATE CUSTO... " />
-            <marker date="1480383827525" expanded="true" signature="21230:21296" ph="DELETE FROM " />
-            <marker date="1480383827525" expanded="true" signature="21913:22101" ph="INSERT INTO CUSTOMER_BILLED_TO... " />
-            <marker date="1480383827525" expanded="true" signature="22014:22079" ph="SELECT IS_DE... CUSTOMER_BILLED_TO" />
-            <marker date="1480383827525" expanded="true" signature="22138:22204" ph="DELETE FROM " />
-            <marker date="1480383827525" expanded="true" signature="22239:22315" ph="UPDATE CUSTO... " />
-            <marker date="1480383827525" expanded="true" signature="22353:22570" ph="UPDATE CUSTO... " />
-            <marker date="1480383827525" expanded="true" signature="22396:22457" ph="SELECT IS_DE... CUSTOMER_BILLED_TO" />
-            <marker date="1480383827525" expanded="true" signature="24559:24632" ph="SELECT , IS_... " />
-            <marker date="1480383827525" expanded="true" signature="24662:24690" ph="SELECT STREE... ADDRESS" />
-            <marker date="1480383827525" expanded="true" signature="24662:24733" ph="SELECT CARD_... CREDIT_CARD" />
-            <marker date="1480383827525" expanded="true" signature="25871:25942" ph="INSERT INTO CREDIT_CARD... " />
-            <marker date="1480383827525" expanded="true" signature="25871:26159" ph="INSERT INTO CREDIT_CARD... " />
-            <marker date="1480383827525" expanded="true" signature="25973:26004" ph="SELECT (:1,:... DUAL" />
-            <marker date="1480383827525" expanded="true" signature="25973:26159" ph="SELECT :1,:2... DUAL" />
-            <marker date="1480383827525" expanded="true" signature="26053:26095" ph="SELECT 1 FRO... CREDIT_CARD" />
-            <marker date="1480383827525" expanded="true" signature="26191:26249" ph="SELECT CARD_... CREDIT_CARD" />
-            <marker date="1480383827525" expanded="true" signature="26282:26348" ph="INSERT INTO CUSTOMER_HAS_CARD... " />
+            <marker date="1480783367842" expanded="true" signature="389:575" ph="SELECT ADDR_... ADDRESS" />
+            <marker date="1480783367842" expanded="true" signature="601:934" ph="INSERT INTO ADDRESS... " />
+            <marker date="1480783367842" expanded="true" signature="681:934" ph="SELECT :1,:2... DUAL" />
+            <marker date="1480783367842" expanded="true" signature="743:791" ph="SELECT 1 FRO... ADDRESS" />
+            <marker date="1480783367842" expanded="true" signature="967:1042" ph="INSERT INTO CUSTOMER_LIVES... " />
+            <marker date="1480783367842" expanded="true" signature="2001:2064" ph="INSERT INTO LOG_IN_DETAILS... " />
+            <marker date="1480783367842" expanded="true" signature="2093:2160" ph="INSERT INTO CUSTOMER... " />
+            <marker date="1480783367842" expanded="true" signature="2187:2235" ph="SELECT CUSTO... CUSTOMER" />
+            <marker date="1480783367842" expanded="true" signature="3824:3883" ph="SELECT LOG_I... LOG_IN_DETAILS" />
+            <marker date="1480783367842" expanded="true" signature="4872:4950" ph="SELECT CUSTO... CUSTOMER" />
+            <marker date="1480783367842" expanded="true" signature="5702:5783" ph="SELECT ADDR_... CUSTOMER_LIVES" />
+            <marker date="1480783367842" expanded="true" signature="5816:5900" ph="SELECT ADDR_... CUSTOMER_BILLED_TO" />
+            <marker date="1480783367842" expanded="true" signature="5931:5991" ph="SELECT CARD_... CUSTOMER_HAS_CARD" />
+            <marker date="1480783367842" expanded="true" signature="6020:6092" ph="SELECT CARD_... CREDIT_CARD" />
+            <marker date="1480783367842" expanded="true" signature="6118:6212" ph="SELECT STREE... ADDRESS" />
+            <marker date="1480783367842" expanded="true" signature="8329:8398" ph="SELECT ADDR_... CUSTOMER_LIVES" />
+            <marker date="1480783367842" expanded="true" signature="8424:8518" ph="SELECT STREE... ADDRESS" />
+            <marker date="1480783367842" expanded="true" signature="9801:9917" ph="INSERT INTO CUSTOMER_LIVES... " />
+            <marker date="1480783367842" expanded="true" signature="9892:9917" ph="SELECT :1,:2... DUAL" />
+            <marker date="1480783367842" expanded="true" signature="10122:10203" ph="SELECT ADDR_... CUSTOMER_LIVES" />
+            <marker date="1480783367842" expanded="true" signature="10235:10315" ph="UPDATE CUSTO... " />
+            <marker date="1480783367842" expanded="true" signature="12100:12181" ph="SELECT ADDR_... CUSTOMER_LIVES" />
+            <marker date="1480783367842" expanded="true" signature="12213:12272" ph="UPDATE CUSTO... " />
+            <marker date="1480783367842" expanded="true" signature="13025:13087" ph="DELETE FROM " />
+            <marker date="1480783367842" expanded="true" signature="13671:13847" ph="INSERT INTO CUSTOMER_LIVES... " />
+            <marker date="1480783367842" expanded="true" signature="13764:13825" ph="SELECT IS_DE... CUSTOMER_LIVES" />
+            <marker date="1480783367842" expanded="true" signature="13881:13943" ph="DELETE FROM " />
+            <marker date="1480783367842" expanded="true" signature="13975:14047" ph="UPDATE CUSTO... " />
+            <marker date="1480783367842" expanded="true" signature="14084:14299" ph="UPDATE CUSTO... " />
+            <marker date="1480783367842" expanded="true" signature="14123:14184" ph="SELECT IS_DE... CUSTOMER_BILLED_TO" />
+            <marker date="1480783367842" expanded="true" signature="16399:16472" ph="SELECT ADDR_... CUSTOMER_BILLED_TO" />
+            <marker date="1480783367842" expanded="true" signature="16498:16592" ph="SELECT STREE... ADDRESS" />
+            <marker date="1480783367842" expanded="true" signature="17844:17968" ph="INSERT INTO CUSTOMER_BILLED_TO... " />
+            <marker date="1480783367842" expanded="true" signature="17943:17968" ph="SELECT :1,:2... DUAL" />
+            <marker date="1480783367842" expanded="true" signature="18180:18265" ph="SELECT ADDR_... CUSTOMER_BILLED_TO" />
+            <marker date="1480783367842" expanded="true" signature="18300:18384" ph="UPDATE CUSTO... " />
+            <marker date="1480783367842" expanded="true" signature="20262:20347" ph="SELECT ADDR_... CUSTOMER_BILLED_TO" />
+            <marker date="1480783367842" expanded="true" signature="20382:20445" ph="UPDATE CUSTO... " />
+            <marker date="1480783367842" expanded="true" signature="21233:21299" ph="DELETE FROM " />
+            <marker date="1480783367842" expanded="true" signature="21916:22104" ph="INSERT INTO CUSTOMER_BILLED_TO... " />
+            <marker date="1480783367842" expanded="true" signature="22017:22082" ph="SELECT IS_DE... CUSTOMER_BILLED_TO" />
+            <marker date="1480783367842" expanded="true" signature="22141:22207" ph="DELETE FROM " />
+            <marker date="1480783367842" expanded="true" signature="22242:22318" ph="UPDATE CUSTO... " />
+            <marker date="1480783367842" expanded="true" signature="22356:22573" ph="UPDATE CUSTO... " />
+            <marker date="1480783367842" expanded="true" signature="22399:22460" ph="SELECT IS_DE... CUSTOMER_BILLED_TO" />
+            <marker date="1480783367842" expanded="true" signature="24562:24635" ph="SELECT , IS_... " />
+            <marker date="1480783367842" expanded="true" signature="24665:24693" ph="SELECT STREE... ADDRESS" />
+            <marker date="1480783367842" expanded="true" signature="24665:24736" ph="SELECT CARD_... CREDIT_CARD" />
+            <marker date="1480783367842" expanded="true" signature="25874:25945" ph="INSERT INTO CREDIT_CARD... " />
+            <marker date="1480783367842" expanded="true" signature="25874:26100" ph="INSERT INTO CREDIT_CARD... " />
+            <marker date="1480783367842" expanded="true" signature="25976:26007" ph="SELECT (:1,:... DUAL" />
+            <marker date="1480783367842" expanded="true" signature="25976:26100" ph="SELECT :1,:2... DUAL" />
+            <marker date="1480783367842" expanded="true" signature="26056:26098" ph="SELECT 1 FRO... CREDIT_CARD" />
+            <marker date="1480783367842" expanded="true" signature="26132:26190" ph="SELECT CARD_... CREDIT_CARD" />
+            <marker date="1480783367842" expanded="true" signature="26223:26289" ph="INSERT INTO CUSTOMER_HAS_CARD... " />
+            <marker date="1480783367842" expanded="true" signature="27269:27503" ph="INSERT INTO CREDIT_CARD... " />
+            <marker date="1480783367842" expanded="true" signature="27375:27503" ph="SELECT :1,:2... DUAL" />
+            <marker date="1480783367842" expanded="true" signature="27459:27501" ph="SELECT 1 FRO... CREDIT_CARD" />
+            <marker date="1480783367842" expanded="true" signature="27535:27593" ph="SELECT CARD_... CREDIT_CARD" />
+            <marker date="1480783367842" expanded="true" signature="27626:27706" ph="UPDATE CUSTO... " />
+            <marker date="1480783367842" expanded="true" signature="27632:27689" ph="INSERT INTO CUSTOMER_HAS_CARD... " />
+            <marker date="1480783367842" expanded="true" signature="28737:28804" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>
@@ -852,14 +857,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/store/templates/store/billingAddress.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="18" lean-forward="false" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/local/lib/python2.7/dist-packages/django/core/handlers/exception.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -894,22 +891,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/store/static/js/shippingAddress.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="176" column="21" lean-forward="true" selection-start-line="176" selection-start-column="21" selection-end-line="176" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/store/templates/store/profile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="62" column="44" lean-forward="false" selection-start-line="62" selection-start-column="44" selection-end-line="62" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/store/templates/store/shippingAddress.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -934,28 +915,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/store/templates/store/cardsForm.html">
+    <entry file="file://$PROJECT_DIR$/store/templates/store/profile.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="65" column="22" lean-forward="false" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="22" />
+        <state relative-caret-position="135">
+          <caret line="48" column="36" lean-forward="true" selection-start-line="48" selection-start-column="36" selection-end-line="48" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store/templates/store/billingAddress.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="9" column="75" lean-forward="false" selection-start-line="9" selection-start-column="62" selection-end-line="9" selection-end-column="75" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/store/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="45" lean-forward="false" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
+        <state relative-caret-position="276">
+          <caret line="20" column="49" lean-forward="true" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/store/templates/store/userCards.html">
+    <entry file="file://$PROJECT_DIR$/store/templates/store/cardsForm.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="8" column="87" lean-forward="false" selection-start-line="8" selection-start-column="87" selection-end-line="8" selection-end-column="87" />
+          <caret line="50" column="34" lean-forward="true" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store/templates/store/userCards.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="32" column="64" lean-forward="false" selection-start-line="32" selection-start-column="64" selection-end-line="32" selection-end-column="64" />
           <folding />
         </state>
       </provider>
@@ -973,77 +970,105 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/store/views.py">
+    <entry file="dbDummy://dbtable:/78f97950/1f4eccb9-a917-4b1e-82b5-844c256fe896/VPOLAVARAPU1.CUSTOMER_HAS_CARD">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store/static/js/shippingAddress.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="671" column="8" lean-forward="false" selection-start-line="671" selection-start-column="8" selection-end-line="671" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-            <marker date="1480383827525" expanded="true" signature="389:575" ph="SELECT ADDR_... ADDRESS" />
-            <marker date="1480383827525" expanded="true" signature="601:934" ph="INSERT INTO ADDRESS... " />
-            <marker date="1480383827525" expanded="true" signature="681:934" ph="SELECT :1,:2... DUAL" />
-            <marker date="1480383827525" expanded="true" signature="743:791" ph="SELECT 1 FRO... ADDRESS" />
-            <marker date="1480383827525" expanded="true" signature="967:1042" ph="INSERT INTO CUSTOMER_LIVES... " />
-            <marker date="1480383827525" expanded="true" signature="2001:2064" ph="INSERT INTO LOG_IN_DETAILS... " />
-            <marker date="1480383827525" expanded="true" signature="2093:2160" ph="INSERT INTO CUSTOMER... " />
-            <marker date="1480383827525" expanded="true" signature="2187:2235" ph="SELECT CUSTO... CUSTOMER" />
-            <marker date="1480383827525" expanded="true" signature="3824:3883" ph="SELECT LOG_I... LOG_IN_DETAILS" />
-            <marker date="1480383827525" expanded="true" signature="4872:4950" ph="SELECT CUSTO... CUSTOMER" />
-            <marker date="1480383827525" expanded="true" signature="5702:5783" ph="SELECT ADDR_... CUSTOMER_LIVES" />
-            <marker date="1480383827525" expanded="true" signature="5816:5900" ph="SELECT ADDR_... CUSTOMER_BILLED_TO" />
-            <marker date="1480383827525" expanded="true" signature="5931:5991" ph="SELECT CARD_... CUSTOMER_HAS_CARD" />
-            <marker date="1480383827525" expanded="true" signature="6020:6092" ph="SELECT CARD_... CREDIT_CARD" />
-            <marker date="1480383827525" expanded="true" signature="6118:6212" ph="SELECT STREE... ADDRESS" />
-            <marker date="1480383827525" expanded="true" signature="8326:8395" ph="SELECT ADDR_... CUSTOMER_LIVES" />
-            <marker date="1480383827525" expanded="true" signature="8421:8515" ph="SELECT STREE... ADDRESS" />
-            <marker date="1480383827525" expanded="true" signature="9798:9914" ph="INSERT INTO CUSTOMER_LIVES... " />
-            <marker date="1480383827525" expanded="true" signature="9889:9914" ph="SELECT :1,:2... DUAL" />
-            <marker date="1480383827525" expanded="true" signature="10119:10200" ph="SELECT ADDR_... CUSTOMER_LIVES" />
-            <marker date="1480383827525" expanded="true" signature="10232:10312" ph="UPDATE CUSTO... " />
-            <marker date="1480383827525" expanded="true" signature="12097:12178" ph="SELECT ADDR_... CUSTOMER_LIVES" />
-            <marker date="1480383827525" expanded="true" signature="12210:12269" ph="UPDATE CUSTO... " />
-            <marker date="1480383827525" expanded="true" signature="13022:13084" ph="DELETE FROM " />
-            <marker date="1480383827525" expanded="true" signature="13668:13844" ph="INSERT INTO CUSTOMER_LIVES... " />
-            <marker date="1480383827525" expanded="true" signature="13761:13822" ph="SELECT IS_DE... CUSTOMER_LIVES" />
-            <marker date="1480383827525" expanded="true" signature="13878:13940" ph="DELETE FROM " />
-            <marker date="1480383827525" expanded="true" signature="13972:14044" ph="UPDATE CUSTO... " />
-            <marker date="1480383827525" expanded="true" signature="14081:14296" ph="UPDATE CUSTO... " />
-            <marker date="1480383827525" expanded="true" signature="14120:14181" ph="SELECT IS_DE... CUSTOMER_BILLED_TO" />
-            <marker date="1480383827525" expanded="true" signature="16396:16469" ph="SELECT ADDR_... CUSTOMER_BILLED_TO" />
-            <marker date="1480383827525" expanded="true" signature="16495:16589" ph="SELECT STREE... ADDRESS" />
-            <marker date="1480383827525" expanded="true" signature="17841:17965" ph="INSERT INTO CUSTOMER_BILLED_TO... " />
-            <marker date="1480383827525" expanded="true" signature="17940:17965" ph="SELECT :1,:2... DUAL" />
-            <marker date="1480383827525" expanded="true" signature="18177:18262" ph="SELECT ADDR_... CUSTOMER_BILLED_TO" />
-            <marker date="1480383827525" expanded="true" signature="18297:18381" ph="UPDATE CUSTO... " />
-            <marker date="1480383827525" expanded="true" signature="20259:20344" ph="SELECT ADDR_... CUSTOMER_BILLED_TO" />
-            <marker date="1480383827525" expanded="true" signature="20379:20442" ph="UPDATE CUSTO... " />
-            <marker date="1480383827525" expanded="true" signature="21230:21296" ph="DELETE FROM " />
-            <marker date="1480383827525" expanded="true" signature="21913:22101" ph="INSERT INTO CUSTOMER_BILLED_TO... " />
-            <marker date="1480383827525" expanded="true" signature="22014:22079" ph="SELECT IS_DE... CUSTOMER_BILLED_TO" />
-            <marker date="1480383827525" expanded="true" signature="22138:22204" ph="DELETE FROM " />
-            <marker date="1480383827525" expanded="true" signature="22239:22315" ph="UPDATE CUSTO... " />
-            <marker date="1480383827525" expanded="true" signature="22353:22570" ph="UPDATE CUSTO... " />
-            <marker date="1480383827525" expanded="true" signature="22396:22457" ph="SELECT IS_DE... CUSTOMER_BILLED_TO" />
-            <marker date="1480383827525" expanded="true" signature="24559:24632" ph="SELECT , IS_... " />
-            <marker date="1480383827525" expanded="true" signature="24662:24690" ph="SELECT STREE... ADDRESS" />
-            <marker date="1480383827525" expanded="true" signature="24662:24733" ph="SELECT CARD_... CREDIT_CARD" />
-            <marker date="1480383827525" expanded="true" signature="25871:25942" ph="INSERT INTO CREDIT_CARD... " />
-            <marker date="1480383827525" expanded="true" signature="25871:26159" ph="INSERT INTO CREDIT_CARD... " />
-            <marker date="1480383827525" expanded="true" signature="25973:26004" ph="SELECT (:1,:... DUAL" />
-            <marker date="1480383827525" expanded="true" signature="25973:26159" ph="SELECT :1,:2... DUAL" />
-            <marker date="1480383827525" expanded="true" signature="26053:26095" ph="SELECT 1 FRO... CREDIT_CARD" />
-            <marker date="1480383827525" expanded="true" signature="26191:26249" ph="SELECT CARD_... CREDIT_CARD" />
-            <marker date="1480383827525" expanded="true" signature="26282:26348" ph="INSERT INTO CUSTOMER_HAS_CARD... " />
-          </folding>
+        <state relative-caret-position="-639">
+          <caret line="91" column="9" lean-forward="true" selection-start-line="91" selection-start-column="9" selection-end-line="91" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/store/static/js/userCards.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+        <state relative-caret-position="382">
+          <caret line="135" column="6" lean-forward="true" selection-start-line="135" selection-start-column="6" selection-end-line="135" selection-end-column="6" />
           <folding>
             <element signature="e#0#38#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/store/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="659" column="74" lean-forward="false" selection-start-line="659" selection-start-column="74" selection-end-line="659" selection-end-column="74" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+            <marker date="1480783367842" expanded="true" signature="389:575" ph="SELECT ADDR_... ADDRESS" />
+            <marker date="1480783367842" expanded="true" signature="601:934" ph="INSERT INTO ADDRESS... " />
+            <marker date="1480783367842" expanded="true" signature="681:934" ph="SELECT :1,:2... DUAL" />
+            <marker date="1480783367842" expanded="true" signature="743:791" ph="SELECT 1 FRO... ADDRESS" />
+            <marker date="1480783367842" expanded="true" signature="967:1042" ph="INSERT INTO CUSTOMER_LIVES... " />
+            <marker date="1480783367842" expanded="true" signature="2001:2064" ph="INSERT INTO LOG_IN_DETAILS... " />
+            <marker date="1480783367842" expanded="true" signature="2093:2160" ph="INSERT INTO CUSTOMER... " />
+            <marker date="1480783367842" expanded="true" signature="2187:2235" ph="SELECT CUSTO... CUSTOMER" />
+            <marker date="1480783367842" expanded="true" signature="3824:3883" ph="SELECT LOG_I... LOG_IN_DETAILS" />
+            <marker date="1480783367842" expanded="true" signature="4872:4950" ph="SELECT CUSTO... CUSTOMER" />
+            <marker date="1480783367842" expanded="true" signature="5702:5783" ph="SELECT ADDR_... CUSTOMER_LIVES" />
+            <marker date="1480783367842" expanded="true" signature="5816:5900" ph="SELECT ADDR_... CUSTOMER_BILLED_TO" />
+            <marker date="1480783367842" expanded="true" signature="5931:5991" ph="SELECT CARD_... CUSTOMER_HAS_CARD" />
+            <marker date="1480783367842" expanded="true" signature="6020:6092" ph="SELECT CARD_... CREDIT_CARD" />
+            <marker date="1480783367842" expanded="true" signature="6118:6212" ph="SELECT STREE... ADDRESS" />
+            <marker date="1480783367842" expanded="true" signature="8329:8398" ph="SELECT ADDR_... CUSTOMER_LIVES" />
+            <marker date="1480783367842" expanded="true" signature="8424:8518" ph="SELECT STREE... ADDRESS" />
+            <marker date="1480783367842" expanded="true" signature="9801:9917" ph="INSERT INTO CUSTOMER_LIVES... " />
+            <marker date="1480783367842" expanded="true" signature="9892:9917" ph="SELECT :1,:2... DUAL" />
+            <marker date="1480783367842" expanded="true" signature="10122:10203" ph="SELECT ADDR_... CUSTOMER_LIVES" />
+            <marker date="1480783367842" expanded="true" signature="10235:10315" ph="UPDATE CUSTO... " />
+            <marker date="1480783367842" expanded="true" signature="12100:12181" ph="SELECT ADDR_... CUSTOMER_LIVES" />
+            <marker date="1480783367842" expanded="true" signature="12213:12272" ph="UPDATE CUSTO... " />
+            <marker date="1480783367842" expanded="true" signature="13025:13087" ph="DELETE FROM " />
+            <marker date="1480783367842" expanded="true" signature="13671:13847" ph="INSERT INTO CUSTOMER_LIVES... " />
+            <marker date="1480783367842" expanded="true" signature="13764:13825" ph="SELECT IS_DE... CUSTOMER_LIVES" />
+            <marker date="1480783367842" expanded="true" signature="13881:13943" ph="DELETE FROM " />
+            <marker date="1480783367842" expanded="true" signature="13975:14047" ph="UPDATE CUSTO... " />
+            <marker date="1480783367842" expanded="true" signature="14084:14299" ph="UPDATE CUSTO... " />
+            <marker date="1480783367842" expanded="true" signature="14123:14184" ph="SELECT IS_DE... CUSTOMER_BILLED_TO" />
+            <marker date="1480783367842" expanded="true" signature="16399:16472" ph="SELECT ADDR_... CUSTOMER_BILLED_TO" />
+            <marker date="1480783367842" expanded="true" signature="16498:16592" ph="SELECT STREE... ADDRESS" />
+            <marker date="1480783367842" expanded="true" signature="17844:17968" ph="INSERT INTO CUSTOMER_BILLED_TO... " />
+            <marker date="1480783367842" expanded="true" signature="17943:17968" ph="SELECT :1,:2... DUAL" />
+            <marker date="1480783367842" expanded="true" signature="18180:18265" ph="SELECT ADDR_... CUSTOMER_BILLED_TO" />
+            <marker date="1480783367842" expanded="true" signature="18300:18384" ph="UPDATE CUSTO... " />
+            <marker date="1480783367842" expanded="true" signature="20262:20347" ph="SELECT ADDR_... CUSTOMER_BILLED_TO" />
+            <marker date="1480783367842" expanded="true" signature="20382:20445" ph="UPDATE CUSTO... " />
+            <marker date="1480783367842" expanded="true" signature="21233:21299" ph="DELETE FROM " />
+            <marker date="1480783367842" expanded="true" signature="21916:22104" ph="INSERT INTO CUSTOMER_BILLED_TO... " />
+            <marker date="1480783367842" expanded="true" signature="22017:22082" ph="SELECT IS_DE... CUSTOMER_BILLED_TO" />
+            <marker date="1480783367842" expanded="true" signature="22141:22207" ph="DELETE FROM " />
+            <marker date="1480783367842" expanded="true" signature="22242:22318" ph="UPDATE CUSTO... " />
+            <marker date="1480783367842" expanded="true" signature="22356:22573" ph="UPDATE CUSTO... " />
+            <marker date="1480783367842" expanded="true" signature="22399:22460" ph="SELECT IS_DE... CUSTOMER_BILLED_TO" />
+            <marker date="1480783367842" expanded="true" signature="24562:24635" ph="SELECT , IS_... " />
+            <marker date="1480783367842" expanded="true" signature="24665:24693" ph="SELECT STREE... ADDRESS" />
+            <marker date="1480783367842" expanded="true" signature="24665:24736" ph="SELECT CARD_... CREDIT_CARD" />
+            <marker date="1480783367842" expanded="true" signature="25874:25945" ph="INSERT INTO CREDIT_CARD... " />
+            <marker date="1480783367842" expanded="true" signature="25874:26100" ph="INSERT INTO CREDIT_CARD... " />
+            <marker date="1480783367842" expanded="true" signature="25976:26007" ph="SELECT (:1,:... DUAL" />
+            <marker date="1480783367842" expanded="true" signature="25976:26100" ph="SELECT :1,:2... DUAL" />
+            <marker date="1480783367842" expanded="true" signature="26056:26098" ph="SELECT 1 FRO... CREDIT_CARD" />
+            <marker date="1480783367842" expanded="true" signature="26132:26190" ph="SELECT CARD_... CREDIT_CARD" />
+            <marker date="1480783367842" expanded="true" signature="26223:26289" ph="INSERT INTO CUSTOMER_HAS_CARD... " />
+            <marker date="1480783367842" expanded="true" signature="27269:27503" ph="INSERT INTO CREDIT_CARD... " />
+            <marker date="1480783367842" expanded="true" signature="27375:27503" ph="SELECT :1,:2... DUAL" />
+            <marker date="1480783367842" expanded="true" signature="27459:27501" ph="SELECT 1 FRO... CREDIT_CARD" />
+            <marker date="1480783367842" expanded="true" signature="27535:27593" ph="SELECT CARD_... CREDIT_CARD" />
+            <marker date="1480783367842" expanded="true" signature="27626:27706" ph="UPDATE CUSTO... " />
+            <marker date="1480783367842" expanded="true" signature="27632:27689" ph="INSERT INTO CUSTOMER_HAS_CARD... " />
+            <marker date="1480783367842" expanded="true" signature="28737:28804" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>
