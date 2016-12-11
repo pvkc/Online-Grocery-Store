@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <div id="{{ modalId }}" class="modal fade" role="dialog">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -6,51 +7,61 @@
                 <h4 class="modal-title">{{ title }}</h4>
             </div>
             <div class="modal-body">
-                <form method="post" role="form" id="addrForm_{{ ix }}" class="form-horizontal text-left">
+                <form method="post" role="form" id="product_{{ ix }}" class="form-horizontal text-left">
                     {% csrf_token %}
                     <div class="form-group">
                         <div class="col-sm-2 col-sm-offset-2">
-                            <label for="streetName_{{ ix }}" class="control-label">Street Name</label>
+                            <label for="productName_{{ ix }}" class="control-label">Product Name</label>
                         </div>
                         <div class="col-sm-4">
-                            <input type="text" class="form-control" id="streetName_{{ ix }}" name='streetName'
-                                   placeholder="Street Name">
+                            <input type="text" class="form-control" id="productName_{{ ix }}" name='productName'
+                                   placeholder="Product Name" required>
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="col-sm-2 col-sm-offset-2">
-                            <label for="street_{{ ix }}" class="control-label">Street</label>
+                            <label for="productCategory_{{ ix }}" class="control-label">Category</label>
                         </div>
                         <div class="col-sm-4">
-                            <input type="text" class="form-control" id="street_{{ ix }}" name='street'
-                                   placeholder="Street">
+                            <input type="text" class="form-control" id="productCategory_{{ ix }}" name='productCategory'
+                                   placeholder="Product Category" required>
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="col-sm-2 col-sm-offset-2">
-                            <label for="aptNum_{{ ix }}" class="control-label">Apt Num</label>
+                            <label for="productSize_{{ ix }}" class="control-label">Product Size</label>
                         </div>
                         <div class="col-lg-4">
-                            <input type="text" class="form-control" id="aptNum_{{ ix }}" name='aptNum'
-                                   placeholder="Apt Num" required>
+                            <input type="text" class="form-control" id="productSize_{{ ix }}" name='productSize'
+                                   placeholder="Product Size" required>
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="col-sm-2 col-sm-offset-2">
-                            <label for="city_{{ ix }}" class="control-label">City</label>
+                            <label for="additionalInfo_{{ ix }}" class="control-label">Addn. Info</label>
                         </div>
                         <div class="col-lg-4">
-                            <input type="text" class="form-control" id="city_{{ ix }}" name='city' placeholder="City"
+                            <textarea rows="5" style="resize: none" class="form-control" id="additionalInfo_{{ ix }}" name='additionalInfo'
+                                      placeholder="Additional Info" maxlength="3999"
+                                      required></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-2 col-sm-offset-2">
+                            <label for="imageLocation_{{ ix }}" class="control-label">imageLocation</label>
+                        </div>
+                        <div class="col-lg-4">
+                            <input type="url" class="form-control" id="imageLocation_{{ ix }}" name='imageLocation'
+                                   placeholder="Image Location/URL"
                                    required>
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="col-sm-2 col-sm-offset-2">
-                            <label for="state_{{ ix }}" class="control-label">State</label>
+                            <label for="stateName_{{ ix }}" class="control-label">State Name</label>
                         </div>
                         <div class="col-lg-4">
-                            <select  class="form-control" id="state_{{ ix }}" name='state'
-                                    required>
+                            <select class="form-control" id="stateName_{{ ix }}" name='stateName' required>
                                 <option value="AL">Alabama</option>
                                 <option value="AK">Alaska</option>
                                 <option value="AZ">Arizona</option>
@@ -107,18 +118,24 @@
                     </div>
                     <div class="form-group">
                         <div class="col-sm-2 col-sm-offset-2">
-                            <label for="zipCode_{{ ix }}" class="control-label">Zip Code</label>
+                            <label for="price_{{ ix }}" class="control-label">Price in $</label>
                         </div>
                         <div class="col-lg-4">
-                            <input type="text" class="form-control" id="zipCode_{{ ix }}" name='zipCode'
-                                   placeholder="Zip" required>
+                            <input type="text" class="form-control" id="price_{{ ix }}" name='price'
+                                   placeholder="Price" required>
                         </div>
                     </div>
-                    <div class="form-group" style="display: {{ dispCheckBox }}">
-                        <div class=" col-sm-offset-2">
-                            <label>
-                                <input id='setDefault_{{ ix }}' type="checkbox"> Make this default
-                            </label>
+                    <div class="form-group">
+                        <div class="col-sm-2 col-sm-offset-2">
+                            <label for="priceUnit_{{ ix }}" class="control-label">Price Per</label>
+                        </div>
+                        <div class="col-lg-4">
+                            <label> <input type="radio" class="form-control radio-inline" id="priceUnit_1{{ ix }}"
+                                           name='priceUnit_{{ ix }}'
+                                           placeholder="priceUnit" value="0" required> Per LB</label>
+                            <label> <input type="radio" class="form-control radio-inline" id="priceUnit_2{{ ix }}"
+                                           name='priceUnit_{{ ix }}'
+                                           placeholder="priceUnit" value="1" required> Per Unit</label>
                         </div>
                     </div>
 

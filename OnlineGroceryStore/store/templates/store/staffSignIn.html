@@ -4,24 +4,24 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
-                    <form class="form-horizontal text-left" method="post" action="{% url 'logIn' %}" role="form">
+                    <form class="form-horizontal text-left" method="post" action="{% url 'staffLogIn' %}" role="form">
                         {% csrf_token %}
                         <div class="form-group">
                             <div class="col-sm-2 col-sm-offset-5">
-                                <label for="inputEmail3" class="control-label">Email</label>
+                                <label for="staffId" class="control-label">Staff Id</label>
                             </div>
                             <div class="col-lg-4">
-                                <input type="email" class="form-control" id="inputEmail3" name='email'
-                                       placeholder="Email" required>
+                                <input type="text" pattern="[0-9]+*" class="form-control" id="staffId" name='staffId'
+                                       placeholder="Staff Id" required>
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="col-sm-2 col-sm-offset-5">
-                                <label for="inputPassword3" class="control-label"
+                                <label for="password" class="control-label"
                                        contenteditable="false">Password</label>
                             </div>
                             <div class="col-lg-4">
-                                <input type="password" class="form-control" id="inputPassword3" name='password'
+                                <input type="password" class="form-control" id="password" name='password'
                                        placeholder="Password" required>
                             </div>
                         </div>
@@ -29,7 +29,7 @@
                             <div class="col-sm-offset-8 col-sm-10">
                                 <button type="submit" class="btn btn-default" id='logIn'>Log in</button>
                             </div>
-                            <div class="col-sm-offset-8 col-sm-10"><br><a href="{% url 'staffSignIn' %}">staff login<br> click here</a></div>
+                            <div class="col-sm-offset-8 col-sm-10"><br><a href="{% url 'signIn' %}">customer login</a></div>
                         </div>
                     </form>
                 </div>
@@ -37,5 +37,5 @@
         </div>
     </div>
     {% load static %}
-    <script type="text/javascript" src="{% static 'js/signIn.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/staffSignIn.js' %}"></script>
 {% endblock %}

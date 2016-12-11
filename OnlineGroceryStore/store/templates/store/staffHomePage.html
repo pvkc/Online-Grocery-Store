@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+{% extends 'store/baseForStaff.html' %}
+{% block content %}
+    {% include 'store/productModalForm.html' with ix=1 modalId="addProduct" submitId="submitAddProduct" title="Add New Product" %}
+    {% include 'store/productModalForm.html' with ix=2 modalId="updateProduct" submitId="submitUpdateProduct" title="Update Product" %}
+    {#% include 'store/addWHouseStockModal.html' with ix=3 modalId="addStock" submitId="submitAddStock" title="Add Stock" listPName = listPName %#}
+    <div id="addStock" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Add Stock</h4>
+                </div>
+                <div class="modal-body">
+                    <form method="post" role="form" id="product_3" class="form-horizontal text-left">
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <div class="col-sm-2 col-sm-offset-2">
+                                <label for="productName_3" class="control-label">Product Name</label>
+                            </div>
+                            <div class="col-lg-4">
+                                <select class="form-control" id="productName_3" name='productName'
+                                        required>
+                                    {% for id, pname in listPName %}
+                                        <option value={{ id }}>{{ pname }}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-2 col-sm-offset-2">
+                                <label for="quantity_3" class="control-label">Quantity </label>
+                            </div>
+                            <div class="col-lg-4">
+                                <input type="number" class="form-control" id="quantity_3" name='price'
+                                       placeholder="1" required>
+                            </div>
+                        </div>
+
+
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-default" id="submitAddStock">Submit</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <h2>Hello, {{ name }}</h2>
+        <p>Inventory Management</p>
+
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#productDetails">Product Details</a></li>
+            <li><a data-toggle="tab" href="#wareHouse">Warehouse Stock</a></li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="productDetails" class="tab-pane fade in active">
+                <br>
+                <input type="button" value="Add Product" data-toggle="modal" data-target="#addProduct">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Product Deatils</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for id, pName, pCategory, pSize, pAdditionalInfo, pImageLocation, pState, pPrice, priceUnit in product %}
+                        <tr>
+                            <th scope="row">{{ forloop.counter }}</th>
+
+                            <td><img width="225" height="225" class="img-responsive" src="{{ pImageLocation }}"></td>
+
+                            <td>
+                                <address>
+                                    <strong>{{ pName }}</strong><br>
+                                    {{ pCategory }}<br>
+                                    {#  { pAdditionalInfo }#}<br>
+                                    {{ pState }}<br>
+                                    {% ifequal priceUnit "0" %}
+                                        {{ pPrice }}$/LB<br>
+                                    {% else %}
+                                        {{ pPrice }}$/Unit<br>
+                                    {% endifequal %}
+                                </address>
+                            </td>
+                            <td>
+                                <input type="button" onclick="passDataToForm(this)" data-toggle="modal"
+                                       data-target="#updateProduct" name={{ id }} id=editProduct{{ forloop.counter }}
+                                       value="Edit" data-pName="{{ pName }}"
+                                       data-pCategory="{{ pCategory }}" data-pSize="{{ pSize }}"
+                                       data-padditionalInfo="{{ pAdditionalInfo }}"
+                                       data-pimageLocation={{ pImageLocation }} data-pState="{{ pState }}"
+                                       data-pPrice="{{ pPrice }}" data-priceUnit="{{ priceUnit }}">
+                                <br>
+                                <br>
+                                <p><input type="submit" onclick="deleteProduct(this)"
+                                          name={{ id }} data-pstate={{ pState }} id=delAddress{{ forloop.counter }}
+                                          value="Delete"></p>
+                                <br>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            <div id="wareHouse" class="tab-pane fade">
+                <h3>Warehouse Stock Details</h3>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>WareHouse Location</th>
+                        <th>Remaining Space (Cubic feet)</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for WAREHOUSE_ID, REM_CAPCITY, STREET, STREET_NAME, APT_NUM, CITY, STATE_NAME, ZIPCODE in  listWareHouse %}
+                        <tr>
+                            <th scope="row">{{ forloop.counter }}</th>
+                            <td>
+                                <address>
+                                    {% ifnotequal STREET '--' %}
+                                        {{ STREET }}<br>
+                                    {% endifnotequal %}
+                                    {% ifnotequal STREET_NAME '--' %}
+                                        {{ STREET_NAME }}<br>
+                                    {% endifnotequal %}
+                                    {{ APT_NUM }}<br>
+                                    {{ CITY }}<br>
+                                    {{ STATE_NAME }}<br>
+                                    {{ ZIPCODE }}<br>
+                                </address>
+                            </td>
+                            <td>
+                                {{ REM_CAPCITY }}
+                            </td>
+                            <td>
+                                <input data-wid="{{ WAREHOUSE_ID }}" type="button" onclick="passWHouseData(this)" data-toggle="modal" data-target="#addStock" value="Add Stock">
+                            </td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    {% load static %}
+    <script type="text/javascript" src="{% static 'js/staffHomePage.js' %}"></script>
+{% endblock %}
+
