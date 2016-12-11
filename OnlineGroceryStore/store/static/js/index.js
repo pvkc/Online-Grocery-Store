@@ -1,15 +1,26 @@
-var searchInput = document.getElementById("HomeSearch");
+$('#searchProduct').click( function () {
+
+    if ($('#searchText').val() == ''){
+        return false;
+    }
 
 
-searchInput.addEventListener('keyup',getValue);
+    formData = { 'searchText':$('#searchText').val(),
+        'state': $('#storeState').data('state')
+    };
 
 
-function getValue(){
-		//var value = document.getElementById('HomeSearch').value;
-		var displayMenu = document.getElementById("display");
-		var predictedList = document.getElementById("PredictedList");
-		displayMenu.innerHTML = ''
+    $.ajax({url: 'searchProduct',
+           type:'POST',
+           data:formData,
+           success:function (data) {
+                       // window.location = window.location.href;
+               var productDisplay = document.getElementById('productDisplay');
+               productDisplay.innerHTML = data;
+           },
 
-		predictedList.insertAdjacentHTML('beforeend', '<option>'+ searchInput.value + '</option>' )
-		displayMenu.insertAdjacentHTML('beforeend', '<p>' + searchInput.value + '</p>');
-	}
+           error:function (XHR, textStatus, errorThrown) {
+                   productDisplay.innerHTML = "Something is wrong, try later."
+           }
+       })
+});

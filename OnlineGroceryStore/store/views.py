@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse, Http404, HttpResponseNotFound
 from django.views.decorators.csrf import csrf_exempt
+from django.template.loader import render_to_string
 import cx_Oracle as db
 import bcrypt as bc
 from hashlib import sha1
@@ -41,14 +42,54 @@ def openDbConnection():
 
 def index(request):
     context = {}
+    SQLSelectCustAddress = '''SELECT ADDR_ID FROM CUSTOMER_LIVES WHERE CUSTOMER_ID=:1 AND IS_DEFAULT='Y' '''
+    SQLSelectStateOfAddr = '''SELECT STATE_NAME FROM ADDRESS WHERE ADDR_ID=:1'''
+    SQLSelectProductFromState = '''SELECT P.PRODUCT_ID, P.PRODUCT_NAME, P.PRODUCT_CATEGORY, P.PRODUCT_SIZE, P.ADDITIONAL_INFO, P.IMAGE_LOCATION, PP.STATE_NAME, PP.PRICE, PP.PRICE_UNIT
+                              FROM PRODUCT P, PRODUCT_PRICE PP WHERE PP.PRODUCT_ID = P.PRODUCT_ID AND PP.STATE_NAME=:1 '''
+    conn = openDbConnection()
+    listProduct = []
+
+    if conn == ERROR:
+        return HttpResponseNotFound("DB down, Try Later")
+
     if 'name' in request.session:
         context['toLoad'] = 'store/base_after_login.html'
         context['name'] = request.session['name']
+
+        try:
+            curr = conn.cursor()
+            curr.execute(SQLSelectCustAddress, (request.session['custId'],))
+            addrId = curr.fetchall()[0][0]
+            curr.execute(SQLSelectStateOfAddr, (addrId,))
+            state = curr.fetchall()[0][0]
+            curr.execute(SQLSelectProductFromState,(state,))
+            for data in curr.fetchall():
+                listProduct.append(data)
+
+
+        except db.DatabaseError, exp:
+            print exp
+            conn.close()
+            return HttpResponseNotFound('Execution failed, Try Later')
+
     else:
         context['toLoad'] = 'store/base_not_logged_in.html'
         context['name'] = ''
+        state = 'IL'
 
+        try:
+            curr = conn.cursor()
+            curr.execute(SQLSelectProductFromState, (state,))
+            for data in curr.fetchall():
+                listProduct.append(data)
+        except db.DatabaseError, exp:
+            print exp
+            conn.close()
+            return HttpResponseNotFound('Execution failed, Try Later')
+
+    context['indexListProduct'] = listProduct
     context['title'] = 'US Grocery Store'
+    context['state'] = state
 
     return render(request, 'store/index.html', context)
 
@@ -1069,3 +1110,38 @@ def addStock(request):
     conn.commit()
     conn.close()
     return HttpResponse(status=200)
+
+@csrf_exempt
+def searchProduct(request):
+    SQLSelectProductFromState = '''SELECT P.PRODUCT_ID, P.PRODUCT_NAME, P.PRODUCT_CATEGORY, P.PRODUCT_SIZE, P.ADDITIONAL_INFO, P.IMAGE_LOCATION, PP.STATE_NAME, PP.PRICE, PP.PRICE_UNIT
+                                 FROM PRODUCT P, PRODUCT_PRICE PP WHERE PP.PRODUCT_ID = P.PRODUCT_ID AND PP.STATE_NAME=:1 AND LOWER(P.PRODUCT_NAME) LIKE :2'''
+    conn = openDbConnection()
+    listProduct = []
+
+    if conn == ERROR:
+        return HttpResponseNotFound("DB down, Try Later")
+
+    context = {}
+    #context['toLoad'] = 'store/base_after_login.html'
+    if request.session.get('name',[]):
+        context['name'] = request.session['name']
+    else:
+        context['name'] = ''
+
+    try:
+        curr = conn.cursor()
+        curr.execute(SQLSelectProductFromState,(request.POST['state'], '%'+request.POST['searchText'].lower()+'%'))
+        for data in curr.fetchall():
+            listProduct.append(data)
+
+
+    except db.DatabaseError, exp:
+        print exp
+        conn.close()
+        return HttpResponseNotFound('Execution failed, Try Later')
+
+
+    context['indexListProduct'] = listProduct
+    context['state'] = request.POST['state']
+
+    return HttpResponse(render_to_string ('store/searchResults.html', context))

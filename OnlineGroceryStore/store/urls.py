@@ -32,5 +32,6 @@ urlpatterns = [url(r'^signIn$', views.signIn, name='signIn'),
                url(r'^updateCard$', views.updateCard, name = 'updateCard'),
                url(r'^logIn$', views.logIn, name='logIn'),
                url(r'staffLogin$', views.staffLogIn, name='staffLogIn'),
+               url(r'searchProduct$', views.searchProduct, name='searchProduct'),
                url(r'^$', views.index, name='index'),
                ]

@@ -1,21 +1,54 @@
-  {% extends toLoad %}
-  {%block content %}
+{% extends toLoad %}
+{% block content %}
     <div class="section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <form role="form">
-              <div class="form-group">
-                <div class="input-group">
-                  <input type="text" class="form-control" placeholder="Search">
-                  <span class="input-group-btn">
-                    <a class="btn btn-success" type="submit">Go</a>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <form role="form">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input type="text" id="searchText" class="form-control" placeholder="Search">
+                                <span class="input-group-btn">
+                    <a class="btn btn-success" id="searchProduct" type="submit">Go</a>
                   </span>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-              </div>
-            </form>
-          </div>
+            </div>
+            <div id="productDisplay">
+                <div class="row">
+                    <div id="storeState" data-state={{ state }} class="col-md-12">
+                        {% if not name %}
+                            <h1 class="text-center">Showing Produts at {{ state }}, Signin for products at your
+                                location</h1>
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="row">
+                    {% for PRODUCT_ID, PRODUCT_NAME, PRODUCT_CATEGORY, PRODUCT_SIZE, ADDITIONAL_INFO, IMAGE_LOCATION, STATE_NAME, PRICE, PRICE_UNIT in indexListProduct %}
+                        <div class="col-md-4">
+                            <a><img src="{{ IMAGE_LOCATION }}"
+                                    class="img-responsive"></a>
+                            <h3>{{ PRODUCT_NAME }}</h3>
+                            {% ifequal PRICE_UNIT "0" %}
+                                <h4>{{ PRICE }}$/LB</h4>
+                            {% else %}
+                                <h4>{{ PRICE }}$/Unit</h4>
+                            {% endifequal %}
+                            {{ ADDITIONAL_INFO | linebreaks }}
+                            {% if name %}
+                                <input data-pid={{ PRODUCT_ID }} data-state={{ STATE_NAME }} type="button" value="Add to Cart">
+                            {% else %}
+                                <input data-pid={{ PRODUCT_ID }} data-state= {{ STATE_NAME }} type="button" value="Add to Cart" disabled>
+                                <p>Please SignIn to Order</p>
+                            {% endif %}
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  {%endblock%}
+    {% load static %}
+    <script src="{% static 'js/index.js' %}"> </script>
+{% endblock %}
