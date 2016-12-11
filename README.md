@@ -6,11 +6,18 @@ This Repo holds all the Project work done as part of CS425.
 The code is written in python 2.7.12 and uses django 1.10
 The Final commit of Master branch is the submission.
 
-Dependency list:
+##Dependency list:##
+
 Python 2.7.12
+
 bcrypt==3.1.1
+
 Django==1.10.3
 
+cx-Oracle==5.1.2
+
+
+Please use FireFox for testing.
 
 
 Folder Structure:
