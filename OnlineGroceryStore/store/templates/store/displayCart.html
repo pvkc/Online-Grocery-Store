@@ -1,0 +1,43 @@
+{% extends 'store/base_after_login.html' %}
+{% block content %}
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <h1>Shopping Cart</h1>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Sub-total</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for PRODUCT_ID, QUANTITY, PRODUCT_NAME, PRICE, PRICE_UNIT, TOTAL_PRICE in cart %}
+                        <tr>
+                            <th scope="row">{{ forloop.counter }}</th>
+                            <td>{{ PRODUCT_NAME }}</td>
+                            {% ifequal PRICE_UNIT "0" %}
+                                <td>{{ PRICE }}$/LB</td>
+                            {% else %}
+                                <td>{{ PRICE }}$/Unit</td>
+                            {% endifequal %}
+                            <td><input type="number" data-quantity={{ QUANTITY }} data-pid={{ PRODUCT_ID }} onchange="updateCart(this)" value="{{ QUANTITY }}"></td>
+                            <td>{{ TOTAL_PRICE }}$</td>
+                            <td>
+                                <button data-pid={{ PRODUCT_ID }} onclick='deleteFromCart(this)' class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>
+                            </td>
+                        </tr>
+                    {% endfor %}
+
+                    </tbody>
+                </table>
+                <input type="button" value="Order">
+            </div>
+        </div>
+    </div>
+    {% load static %}
+    <script src="{% static 'js/displayCart.js' %}"></script>
+{% endblock %}

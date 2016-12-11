@@ -1179,3 +1179,86 @@ def addToCart(request):
     conn.commit()
     conn.close()
     return redirect('/')
+
+
+def displayShoppingCart(request):
+    SQLSelectCart = '''SELECT CC.PRODUCT_ID,CC.QUANTITY,P.PRODUCT_NAME, PP.PRICE, PP.PRICE_UNIT, PP.PRICE*CC.QUANTITY
+                        FROM CART C INNER JOIN CART_CONTAINS CC ON C.CART_ID = CC.CART_ID
+                        INNER JOIN PRODUCT P ON CC.PRODUCT_ID = P.PRODUCT_ID
+                        INNER JOIN PRODUCT_PRICE PP ON P.PRODUCT_ID = PP.PRODUCT_ID
+                        WHERE C.CUSTOMER_ID=:1 AND PP.STATE_NAME=:2'''
+    SQLSelectCustAddress = '''SELECT ADDR_ID FROM CUSTOMER_LIVES WHERE CUSTOMER_ID=:1 AND IS_DEFAULT='Y' '''
+    SQLSelectStateOfAddr = '''SELECT STATE_NAME FROM ADDRESS WHERE ADDR_ID=:1'''
+
+    conn = openDbConnection()
+    listProduct = []
+    if conn == ERROR:
+        return HttpResponseNotFound("DB down, Try Later")
+    context={}
+    context['title'] = 'Cart'
+
+    try:
+        curr = conn.cursor()
+        curr.execute(SQLSelectCustAddress, (request.session['custId'],))
+        addrId = curr.fetchall()[0][0]
+        curr.execute(SQLSelectStateOfAddr, (addrId,))
+        state = curr.fetchall()[0][0]
+        curr.execute(SQLSelectCart, (request.session['custId'], state))
+        for data in curr.fetchall():
+            listProduct.append(data)
+
+    except db.DatabaseError, exp:
+        print exp
+        conn.close()
+        return HttpResponseNotFound('Execution failed, Try Later')
+
+    context['cart'] = listProduct
+    context['name'] = request.session['name']
+    conn.close()
+    return render(request, 'store/displayCart.html', context)
+
+@csrf_exempt
+def deleteFromCart(request):
+    SQLDeleteCart= '''DELETE FROM CART_CONTAINS CC WHERE CC.PRODUCT_ID=:1
+                          AND CART_ID = (SELECT CART_ID FROM CART WHERE CUSTOMER_ID=:2)'''
+
+    conn = openDbConnection()
+    if conn == ERROR:
+        return HttpResponseNotFound("DB down, Try Later")
+    context = {}
+    context['title'] = 'Cart'
+
+    try:
+        curr = conn.cursor()
+        curr.execute(SQLDeleteCart, (request.POST['pId'],request.session['custId']))
+    except db.DatabaseError, exp:
+        print exp
+        conn.rollback()
+        conn.close()
+        return HttpResponseNotFound('Execution failed, Try Later')
+
+    conn.commit()
+    return HttpResponse(status=200)
+
+@csrf_exempt
+def updateCart(request):
+    SQLUpdateCart = '''UPDATE CART_CONTAINS SET QUANTITY=:1
+                       WHERE CART_ID=(SELECT CART_ID FROM CUSTOMER WHERE CUSTOMER_ID=:2)
+                       AND PRODUCT_ID=:3'''
+    conn = openDbConnection()
+    if conn == ERROR:
+        return HttpResponseNotFound("DB down, Try Later")
+    context = {}
+    context['title'] = 'Cart'
+
+    try:
+        curr = conn.cursor()
+        curr.execute(SQLUpdateCart, (request.POST['quantity'],request.session['custId'],request.POST['pId']))
+    except db.DatabaseError, exp:
+        print exp
+        conn.rollback()
+        conn.close()
+        return HttpResponseNotFound('Execution failed, Try Later')
+
+    conn.commit()
+    return HttpResponse(status=200)
