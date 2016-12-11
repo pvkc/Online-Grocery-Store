@@ -1,8 +1,10 @@
-$('#searchProduct').click( function () {
+$('#searchProduct').click( function (e) {
 
     if ($('#searchText').val() == ''){
         return false;
     }
+
+    e.preventDefault();
 
 
     formData = { 'searchText':$('#searchText').val(),
@@ -24,3 +26,16 @@ $('#searchProduct').click( function () {
            }
        })
 });
+
+function addToCart(reqFrom) {
+    if(reqFrom.parentNode.children.quantity.value < 0){
+        //alert('Quantity must be +ve integer');
+        reqFrom.parentNode.children.quantity.setCustomValidity('Quantity must be +ve integer');
+        return false;
+    }
+    else{
+        reqFrom.parentNode.children.quantity.setCustomValidity('');
+    }
+
+    return true;
+}

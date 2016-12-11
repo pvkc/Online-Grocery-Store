@@ -9,7 +9,7 @@
                             <div class="input-group">
                                 <input type="text" id="searchText" class="form-control" placeholder="Search">
                                 <span class="input-group-btn">
-                    <a class="btn btn-success" id="searchProduct" type="submit">Go</a>
+                    <input class="btn btn-success" id="searchProduct" type="button" value="Go"/>
                   </span>
                             </div>
                         </div>
@@ -37,12 +37,17 @@
                                 <h4>{{ PRICE }}$/Unit</h4>
                             {% endifequal %}
                             {{ ADDITIONAL_INFO | linebreaks }}
+                            <form method="post" action="/addToCart">{% csrf_token %}
                             {% if name %}
-                                <input data-pid={{ PRODUCT_ID }} data-state={{ STATE_NAME }} type="button" value="Add to Cart">
+                                Quantity <input name = 'quantity' type="number">
+                                <input data-pid={{ PRODUCT_ID }} onclick='addToCart(this)' data-state={{ STATE_NAME }} type="submit" value="Add to Cart">
                             {% else %}
-                                <input data-pid={{ PRODUCT_ID }} data-state= {{ STATE_NAME }} type="button" value="Add to Cart" disabled>
+                                Quantity <input type="number" disabled>
+                                <input data-pid={{ PRODUCT_ID }} onclick='addToCart(this)' data-state={{ STATE_NAME }} type="submit" value="Add to Cart" disabled>
                                 <p>Please SignIn to Order</p>
                             {% endif %}
+                                <input text value="{{ PRODUCT_ID }}" name="pId" style="display: none">
+                            </form>
                         </div>
                     {% endfor %}
                 </div>

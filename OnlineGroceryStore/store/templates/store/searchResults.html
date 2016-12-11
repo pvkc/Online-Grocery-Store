@@ -17,13 +17,19 @@
                 <h4>{{ PRICE }}$/Unit</h4>
             {% endifequal %}
             {{ ADDITIONAL_INFO | linebreaks }}
-            {% if name %}
-                <input data-pid={{ PRODUCT_ID }} data-state={{ STATE_NAME }} type="button" value="Add to Cart">
-            {% else %}
-                <input data-pid={{ PRODUCT_ID }} data-state= {{ STATE_NAME }} type="button" value="Add to Cart"
-                       disabled>
-                <p>Please SignIn to Order</p>
-            {% endif %}
+            <form method="post" action="/addtoCart">
+                {% if name %}
+                    Quantity <input name='quantity' type="number">
+                    <input data-pid={{ PRODUCT_ID }} onclick='addToCart(this)' data-state={{ STATE_NAME }}
+                    type="submit" value="Add to Cart">
+                {% else %}
+                    Quantity <input type="number" disabled>
+                    <input data-pid={{ PRODUCT_ID }} onclick='addToCart(this)' data-state={{ STATE_NAME }} type="submit"
+                           value="Add to Cart" disabled>
+                    <p>Please SignIn to Order</p>
+                {% endif %}
+                <input text value="{{ PRODUCT_ID }}" style="display: none">
+            </form>
         </div>
     {% endfor %}
 </div>

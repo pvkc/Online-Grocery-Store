@@ -1145,3 +1145,37 @@ def searchProduct(request):
     context['state'] = request.POST['state']
 
     return HttpResponse(render_to_string ('store/searchResults.html', context))
+
+
+def addToCart(request):
+    SQLInsertCart='''INSERT INTO CART(CUSTOMER_ID)
+                      SELECT :1 FROM DUAL WHERE NOT EXISTS(SELECT 1 FROM CART WHERE CUSTOMER_ID=:1)'''
+    SQLSelectCart='''SELECT CART_ID FROM CART WHERE CUSTOMER_ID=:1'''
+    SQLInsertCartContains = '''INSERT INTO CART_CONTAINS(QUANTITY,CART_ID,PRODUCT_ID)
+                              SELECT :1,:2,:3 FROM DUAL WHERE
+                               NOT EXISTS(SELECT  1 FROM CART_CONTAINS WHERE CART_ID=:2 AND PRODUCT_ID=:3)'''
+    SQLUpdateCartContains = '''UPDATE CART_CONTAINS SET QUANTITY=:1 WHERE CART_ID=:2 AND PRODUCT_ID=:3'''
+    conn = openDbConnection()
+
+    if conn == ERROR:
+        return HttpResponseNotFound("DB down, Try Later")
+
+    try:
+        curr = conn.cursor()
+
+        curr.execute(SQLInsertCart, (request.session['custId'],))
+        curr.execute(SQLSelectCart, (request.session['custId'],))
+        cartId = curr.fetchall()[0][0]
+
+        curr.execute(SQLUpdateCartContains,
+                     (request.POST['quantity'], cartId, request.POST['pId']))
+        curr.execute(SQLInsertCartContains, (request.POST['quantity'], cartId, request.POST['pId']))
+    except db.DatabaseError, exp:
+        print exp
+        conn.rollback()
+        conn.close()
+        return HttpResponseNotFound('Execution Failed, Try Later')
+
+    conn.commit()
+    conn.close()
+    return redirect('/')
