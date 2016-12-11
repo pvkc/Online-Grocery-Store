@@ -5,7 +5,7 @@ This Repo holds all the Project work done as part of CS425.
 
 The code is written in python 2.7.12 and uses django 1.10
 The Final commit of Master branch is the submission.
-The Logic is available in 
+
 
 
 ##Dependency list:##
