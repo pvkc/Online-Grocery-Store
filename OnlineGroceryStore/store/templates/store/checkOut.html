@@ -1,0 +1,31 @@
+{% extends 'store/base_after_login.html' %}
+{% block content %}
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <h1>Shopping Cart</h1>
+                <table class="table">
+                    <thead>
+
+                    </thead>
+                    <tbody>
+
+                    <tr>
+                        <th scope="row"> 1 </th>
+                        <td>Payment Method</td>
+                        <td><input type="button" value="Choose"></td>
+                        <td></td>
+
+
+                    </tr>
+
+
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+    {% load static %}
+    <script src="{% static 'js/checkOut.js' %}"></script>
+{% endblock %}

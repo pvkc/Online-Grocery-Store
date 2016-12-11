@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponse, Http404, HttpResponseNotFound
 from django.views.decorators.csrf import csrf_exempt
 from django.template.loader import render_to_string
+import datetime as dt
 import cx_Oracle as db
 import bcrypt as bc
 from hashlib import sha1
@@ -222,6 +223,7 @@ def profile(request):
     SQLSelectCustomerCard = 'SELECT CARD_ID FROM CUSTOMER_HAS_CARD WHERE CUSTOMER_ID = :1'
     SQLSelectCreditCard = 'SELECT CARD_NUM, EXP_MONTH, EXP_YEAR FROM CREDIT_CARD WHERE CARD_ID = :1'
     SQLSelectAddress = 'SELECT STREET, STREET_NAME, APT_NUM, CITY, STATE_NAME, ZIPCODE FROM ADDRESS WHERE ADDR_ID = :1'
+    SQLSelectCustomerBalance = 'SELECT BALANCE FROM CUSTOMER WHERE CUSTOMER_ID=:1'
 
     conn = openDbConnection()
     livesAtAddrId = ''
@@ -268,6 +270,9 @@ def profile(request):
                 context['billAtCity'] = data[3]
                 context['billAtState'] = data[4]
                 context['billAtZip'] = data[5]
+
+        curr.execute(SQLSelectCustomerBalance,(request.session['custId'],))
+        context['balance']=curr.fetchall()[0][0]
     except db.DatabaseError, exp:
         print exp
         conn.close()
@@ -1189,9 +1194,18 @@ def displayShoppingCart(request):
                         WHERE C.CUSTOMER_ID=:1 AND PP.STATE_NAME=:2'''
     SQLSelectCustAddress = '''SELECT ADDR_ID FROM CUSTOMER_LIVES WHERE CUSTOMER_ID=:1 AND IS_DEFAULT='Y' '''
     SQLSelectStateOfAddr = '''SELECT STATE_NAME FROM ADDRESS WHERE ADDR_ID=:1'''
+    SQLSelectCard = '''SELECT CHC.CARD_ID, CC.CARD_NUM, CC.EXP_MONTH, CC.EXP_YEAR
+                       FROM CUSTOMER_HAS_CARD CHC INNER JOIN CREDIT_CARD CC ON CHC.CARD_ID = CC.CARD_ID
+                       WHERE CUSTOMER_ID=:1'''
+    SQLSelectCustomerBillTo = 'SELECT ADDR_ID, IS_DEFAULT FROM CUSTOMER_BILLED_TO WHERE CUSTOMER_ID = :1'
+    SQLSelectAddress = 'SELECT STREET, STREET_NAME, APT_NUM, CITY, STATE_NAME, ZIPCODE FROM ADDRESS WHERE ADDR_ID = :1'
 
     conn = openDbConnection()
     listProduct = []
+    listPrice=[]
+    listCards=[]
+    listAddress=[]
+
     if conn == ERROR:
         return HttpResponseNotFound("DB down, Try Later")
     context={}
@@ -1203,9 +1217,24 @@ def displayShoppingCart(request):
         addrId = curr.fetchall()[0][0]
         curr.execute(SQLSelectStateOfAddr, (addrId,))
         state = curr.fetchall()[0][0]
+
         curr.execute(SQLSelectCart, (request.session['custId'], state))
         for data in curr.fetchall():
             listProduct.append(data)
+            listPrice.append(data[5])
+
+        curr.execute(SQLSelectCard,(request.session['custId'],))
+        for data in curr.fetchall():
+            listCards.append(data)
+
+        curr.execute(SQLSelectCustomerBillTo, (request.session['custId'],))
+        for ix, data in enumerate(curr.fetchall()):
+            BillToAddrId, isDefaultAddr = data
+
+            listAddress.append([BillToAddrId, isDefaultAddr])
+            curr.execute(SQLSelectAddress, (BillToAddrId,))
+            data = curr.fetchall()[0]
+            listAddress[ix].extend(data)
 
     except db.DatabaseError, exp:
         print exp
@@ -1214,6 +1243,10 @@ def displayShoppingCart(request):
 
     context['cart'] = listProduct
     context['name'] = request.session['name']
+    context['tsum'] = sum(listPrice)
+    context['cards'] = listCards
+    context['billAddress'] = listAddress
+
     conn.close()
     return render(request, 'store/displayCart.html', context)
 
@@ -1262,3 +1295,99 @@ def updateCart(request):
 
     conn.commit()
     return HttpResponse(status=200)
+
+
+def checkout(request):
+    return None
+
+
+def placeOrder(request):
+    SQLSelectOrderSeq = '''SELECT ORDERS_SEQ.NEXTVAL FROM DUAL'''
+    SQLInsertOrders = '''INSERT INTO ORDERS(ORDER_ID,STATUS,ISSUED_DATE,CARD_ID,CUSTOMER_ID,BILL_ADDR_ID) VALUES (:1,:2,:3,:4,:5,:6)'''
+    SQLInsertOrderContains = '''INSERT INTO ORDER_CONTAINS(QUANTITY, ORDER_ID, PRODUCT_ID)
+                                SELECT QUANTITY,:1,PRODUCT_ID FROM CART_CONTAINS
+                                WHERE CART_ID=(SELECT CART_ID FROM CART WHERE CUSTOMER_ID=:2)'''
+    SQLSelectCart = '''SELECT CC.PRODUCT_ID,CC.QUANTITY,P.PRODUCT_NAME, PP.PRICE, PP.PRICE_UNIT, PP.PRICE*CC.QUANTITY
+                            FROM CART C INNER JOIN CART_CONTAINS CC ON C.CART_ID = CC.CART_ID
+                            INNER JOIN PRODUCT P ON CC.PRODUCT_ID = P.PRODUCT_ID
+                            INNER JOIN PRODUCT_PRICE PP ON P.PRODUCT_ID = PP.PRODUCT_ID
+                            WHERE C.CUSTOMER_ID=:1 AND PP.STATE_NAME=:2'''
+    SQLUpdateCustomer = '''UPDATE CUSTOMER SET BALANCE= BALANCE+:1 WHERE CUSTOMER_ID=:2'''
+    SQLCheckWHouse = '''SELECT 1 FROM WAREHOUSE WH
+                          INNER JOIN ADDRESS AD ON WH.ADDR_ID = AD.ADDR_ID
+                          WHERE AD.STATE_NAME=:1'''
+    SQLUpdateWHouse = '''UPDATE STOCK_IN_WAREHOUSE SET NUMBER_OF_ITEMS= NUMBER_OF_ITEMS - :1 WHERE WAREHOUSE_ID=:2 AND PRODUCT_ID=:3'''
+    SQLSelectCustAddress = '''SELECT ADDR_ID FROM CUSTOMER_LIVES WHERE CUSTOMER_ID=:1 AND IS_DEFAULT='Y' '''
+    SQLSelectStateOfAddr = '''SELECT STATE_NAME FROM ADDRESS WHERE ADDR_ID=:1'''
+    SQLDeleteCart = '''DELETE FROM CART_CONTAINS WHERE CART_ID=(SELECT CART_ID FROM CART WHERE CUSTOMER_ID=:1)'''
+
+    SQLSelectProdWHouse = '''SELECT SIW.WAREHOUSE_ID, SIW.NUMBER_OF_ITEMS
+                          FROM WAREHOUSE WH
+                          INNER JOIN ADDRESS AD ON WH.ADDR_ID = AD.ADDR_ID
+                          INNER JOIN STOCK_IN_WAREHOUSE SIW ON WH.WAREHOUSE_ID = SIW.WAREHOUSE_ID
+                          WHERE AD.STATE_NAME=:1 AND SIW.PRODUCT_ID=:2
+                          AND SIW.NUMBER_OF_ITEMS >= :3'''
+
+
+
+    conn = openDbConnection()
+    #listProduct = []
+    listPrice = []
+    #listCards = []
+    #listAddress = []
+
+    if conn == ERROR:
+        return HttpResponseNotFound("DB down, Try Later")
+    context = {}
+    context['title'] = 'Cart'
+
+    try:
+        curr = conn.cursor()
+        curr.execute(SQLSelectCustAddress, (request.session['custId'],))
+        addrId = curr.fetchall()[0][0]
+        curr.execute(SQLSelectStateOfAddr, (addrId,))
+        state = curr.fetchall()[0][0]
+        curr.execute(SQLCheckWHouse, (state,))
+
+        if curr.fetchall():
+            pass
+        else:
+            conn.close()
+            HttpResponse("Sorry, we don't serve at your location")
+
+        curr.execute(SQLSelectCart,(request.session['custId'],state))
+
+        for data in curr.fetchall():
+            listPrice.append(data[5])
+            curr.execute(SQLSelectProdWHouse,(state, data[0], data[1]))
+            data_1 = curr.fetchall()
+            if data_1:
+                pass
+            else:
+                conn.rollback()
+                conn.close()
+                return HttpResponse('Product <strong>'+data[2]+'</strong> Out of stock, Cannot place order')
+            curr.execute(SQLUpdateWHouse,(data[1], data_1[0][0], data[0]))
+
+        curr.execute(SQLSelectOrderSeq)
+        orderId = curr.fetchall()[0][0]
+
+        curr.execute(SQLInsertOrders,
+                     (orderId, 'issued', str(dt.date.today()), int(request.POST['paymentCard']), request.session['custId'], int(request.POST['BillAddr'])))
+        curr.execute(SQLInsertOrderContains,(orderId, request.session['custId']))
+        curr.execute(SQLUpdateCustomer, (sum(listPrice), request.session['custId']))
+        curr.execute(SQLDeleteCart,(request.session['custId'],))
+
+
+    except ValueError, exp:
+        #db.DatabaseError ,exp:
+        print exp
+        conn.rollback()
+        conn.close()
+        return HttpResponseNotFound('Execution failed, Try Later')
+
+    conn.commit()
+    conn.close()
+    html='''Order Placed,<a href="/">Click Here for Home Page<a>'''
+    print request.POST
+    return HttpResponse(html)

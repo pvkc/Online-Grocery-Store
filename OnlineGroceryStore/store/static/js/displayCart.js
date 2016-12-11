@@ -2,6 +2,12 @@
  * Created by scl on 12/11/16.
  */
 
+function unhide(reqFrom) {
+    reqFrom.style.display = 'none';
+    document.getElementById('orderCart').style.display="block";
+
+}
+
 function deleteFromCart(reqFrom) {
     var formData = {'pId': reqFrom.dataset.pid};
 

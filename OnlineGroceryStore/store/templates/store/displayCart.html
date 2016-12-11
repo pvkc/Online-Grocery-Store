@@ -24,17 +24,98 @@
                             {% else %}
                                 <td>{{ PRICE }}$/Unit</td>
                             {% endifequal %}
-                            <td><input type="number" data-quantity={{ QUANTITY }} data-pid={{ PRODUCT_ID }} onchange="updateCart(this)" value="{{ QUANTITY }}"></td>
+                            <td><input type="number" data-quantity={{ QUANTITY }} data-pid={{ PRODUCT_ID }}
+                                       onchange="updateCart(this)" value="{{ QUANTITY }}"></td>
                             <td>{{ TOTAL_PRICE }}$</td>
                             <td>
-                                <button data-pid={{ PRODUCT_ID }} onclick='deleteFromCart(this)' class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>
+                                <button data-pid={{ PRODUCT_ID }} onclick='deleteFromCart(this)'
+                                        class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>
                             </td>
                         </tr>
                     {% endfor %}
+                    <tr>
+                        <th scope="row"> Total</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><strong>{{ tsum }}$</strong></td>
+
+                    </tr>
 
                     </tbody>
                 </table>
-                <input type="button" value="Order">
+                {% if cart %}
+                    <input type="button" onclick="unhide(this)" value="Check out">
+                {% else %}
+                    <input type="button" onclick="unhide(this)" value="Check out" disabled><br>
+                    Please add product to cart
+                {% endif %}
+                <div id="orderCart" style="display:none;">
+                    <form method="post" action="{% url 'placeOrder' %}">{% csrf_token %}
+                        <h3>Payement method</h3>
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>Card Number</th>
+                                <th>Exp Date</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {% for  CARD_ID, CARD_NUM, EXP_MONTH, EXP_YEAR in cards %}
+                                <tr>
+                                    <td>
+                                        <div class="radio">
+                                            <label><input type="radio" value="{{ CARD_ID }}"
+                                                          name="paymentCard" required>XXXX-XXXX-XXXX-{{ CARD_NUM|slice:"12:16" }}
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>{{ EXP_MONTH }}/{{ EXP_YEAR }}</td>
+                                </tr>
+                            {% endfor %}
+                            </tbody>
+                        </table>
+                        <h3>Billing Address</h3>
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>Billing Address</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {% for id, isDefaultAddr, BillToStreet, BillToStreetName, BillToAptNum, BillToCity, BillToState, BillToZip in billAddress %}
+                                <tr>
+                                    <td>
+                                        <div class="radio">
+                                            <label><input type="radio" value="{{ id }}"
+                                                          name="BillAddr" required>
+                                                <address>
+                                                    {% ifnotequal BillToStreet '--' %}
+                                                        {{ BillToStreet }}<br>
+                                                    {% endifnotequal %}
+                                                    {% ifnotequal BillToStreetName '--' %}
+                                                        {{ BillToStreetName }}<br>
+                                                    {% endifnotequal %}
+                                                    {{ BillToAptNum }}<br>
+                                                    {{ BillToCity }}<br>
+                                                    {{ BillToState }}<br>
+                                                    {{ BillToZip }}<br>
+                                                </address>
+                                            </label>
+                                        </div>
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                            </tbody>
+                        </table>
+                        {% if billAddress %}
+                            <input type="submit" value="Place Order">
+                        {% else %}
+                            <input type="submit" value="Place Order" disabled>
+                            <h3>Please add Billing Address before proceeding</h3>
+                        {% endif %}
+                    </form>
+                </div>
             </div>
         </div>
     </div>
