@@ -23,7 +23,7 @@ Please use FireFox for testing.
 
 Instructions for Running:
 ----------------------------
-cd cs425-f16-vpolavarapu1/OnlineGroceryStore/
+cd OnlineGroceryStore/
 
 python manage.py runserver
 
