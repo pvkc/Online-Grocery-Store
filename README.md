@@ -1,7 +1,7 @@
 # README #
 
 ### What is this repository for? ###
-This Repo holds all the Project work done as part of CS425.
+A Online Grocery Store With oracle db as backend.
 
 The code is written in python 2.7.12 and uses django 1.10
 The Final commit of Master branch is the submission.
