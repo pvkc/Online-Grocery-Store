@@ -1,4 +1,5 @@
 # README #
+## This repo is decommissioned in favor of https://github.com/pvkc/Online-Grocery-Store-SQLite ##
 
 ### What is this repository for? ###
 A Online Grocery Store With oracle db as backend.
